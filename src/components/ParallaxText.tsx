@@ -51,7 +51,7 @@ export default function ParallaxText() {
         <div
           className={styles.parallaxTextContainer}
           style={{
-            top: index * 100 + 200,
+            top: index * 80 + 200,
           }}
         >
           <span

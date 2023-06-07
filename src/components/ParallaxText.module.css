@@ -10,7 +10,6 @@
 
 .parallaxContainer {
   min-height: 500vh;
-  background: orange;
 
   position: relative;
 }
@@ -31,6 +30,8 @@
 
   position: sticky;
 
-  font-family: "IntegralCF-Bold", sans-serif;
+  font-family: "IntegralCF-Regular", sans-serif;
   font-size: 2.325rem;
+
+  text-align: center;
 }

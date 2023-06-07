@@ -1,7 +1,16 @@
 .homeBackground {
   min-height: 100vh;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  /* background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)),
+    url("./assets/home-background.png"); */
+
+  background: linear-gradient(
+      90.28deg,
+      #000000 0.25%,
+      rgba(0, 0, 0, 0.76) 23.54%,
+      rgba(0, 0, 0, 0) 63.96%
+    ),
     url("./assets/home-background.png");
+
   background-size: cover;
   background-position: center;
 }
