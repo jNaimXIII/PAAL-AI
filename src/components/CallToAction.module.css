@@ -1,0 +1,31 @@
+.callToAction {
+  background: linear-gradient(
+    96.47deg,
+    #ac2bf9 -59.11%,
+    #000000 48.29%,
+    #ac2bf9 165.02%
+  );
+
+  border: 1px solid #ac2bf9;
+  border-radius: 10px;
+
+  padding: 0.8rem 2.2rem;
+
+  font-family: "IntegralCF-Regular", sans-serif;
+  font-size: 1.5rem;
+
+  color: white;
+}
+
+.callToAction:hover {
+  background: #531279;
+  cursor: pointer;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.none {
+  text-transform: none;
+}

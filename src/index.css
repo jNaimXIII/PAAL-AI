@@ -1,0 +1,41 @@
+body {
+  background: black;
+  margin: 0;
+}
+
+.content {
+  max-width: 1367px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "IntegralCF-Bold";
+  src: url("fonts/IntegralCF-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IntegralCF-Heavy";
+  src: url("fonts/IntegralCF-Heavy.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IntegralCF-Medium";
+  src: url("fonts/IntegralCF-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IntegralCF-Regular";
+  src: url("fonts/IntegralCF-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "MonumentExtended-Regular";
+  src: url("fonts/MonumentExtended-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MonumentExtended-Ultrabold";
+  src: url("fonts/MonumentExtended-Ultrabold.otf") format("opentype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;1,500&display=swap");
