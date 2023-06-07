@@ -1,6 +1,7 @@
 import styles from "./App.module.css";
-import CallToAction from "./components/CallToAction";
 import Header from "./components/Header";
+import Hero from "./components/Hero";
+import ParallaxText from "./components/ParallaxText";
 
 function App() {
   return (
@@ -9,30 +10,11 @@ function App() {
         <div className="content">
           <Header />
 
-          <div className={styles.hero}>
-            <div className={styles.heroContent}>
-              <h1 className={styles.heroTitle}>PAAL AI</h1>
-              <span className={styles.heroSubtitle}>
-                With multi platform support
-              </span>
-              <p className={styles.heroText}>
-                A powerful AI ecosystem, predicated on principles of continuous
-                learning and adaptation. Empowered by cutting-edge machine
-                learning algorithms, it offers seamless integration across
-                numerous platforms including Discord, Telegram, chatbot
-                applications, and web links. It's more than a simple chatbot;
-                it's an entire digital environment that adapts to the needs of
-                its users. This AI ecosystem provides a consistent, versatile
-                experience, constantly evolving to better understand and respond
-                to user inquiries, regardless of where or how they interact with
-                it.
-              </p>
-
-              <CallToAction label="Whitepaper" />
-            </div>
-          </div>
+          <Hero />
         </div>
       </div>
+
+      <ParallaxText />
     </main>
   );
 }

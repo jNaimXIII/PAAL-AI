@@ -1,0 +1,50 @@
+.hero {
+  padding-top: 2rem;
+}
+
+.heroContent {
+  padding-top: 200px;
+}
+
+.heroTitle {
+  font-family: "MonumentExtended-Ultrabold", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 140.144px;
+  line-height: 78.5%;
+
+  margin: 1rem 0;
+
+  color: #ffffff;
+}
+
+.heroSubtitle {
+  font-family: "MonumentExtended-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+
+  color: #ac2bf9;
+
+  margin: 1rem 0;
+
+  text-transform: capitalize;
+}
+
+.heroText {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 139.5%;
+
+  text-transform: capitalize;
+
+  max-width: 80ch;
+
+  margin: 1rem 0;
+  margin-bottom: 3rem;
+
+  color: #ffffff;
+}

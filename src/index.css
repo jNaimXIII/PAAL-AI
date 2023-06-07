@@ -1,12 +1,4 @@
-body {
-  background: black;
-  margin: 0;
-}
-
-.content {
-  max-width: 1367px;
-  margin: 0 auto;
-}
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;1,500&display=swap");
 
 @font-face {
   font-family: "IntegralCF-Bold";
@@ -38,4 +30,13 @@ body {
   src: url("fonts/MonumentExtended-Ultrabold.otf") format("opentype");
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;1,500&display=swap");
+body {
+  background: black;
+  margin: 0;
+}
+
+.content {
+  max-width: 1367px;
+  margin: 0 auto;
+  padding: 1rem;
+}
