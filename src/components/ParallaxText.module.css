@@ -1,0 +1,36 @@
+.vantaBackground {
+  position: sticky;
+
+  width: 100%;
+  height: 100vh;
+
+  top: 0;
+  left: 0;
+}
+
+.parallaxContainer {
+  min-height: 500vh;
+  background: orange;
+
+  position: relative;
+}
+
+.parallaxTextContainer {
+  height: 33vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: sticky;
+}
+
+.parallaxText {
+  color: white;
+
+  position: sticky;
+
+  font-family: "IntegralCF-Bold", sans-serif;
+  font-size: 2.325rem;
+}

@@ -9,8 +9,6 @@ export default function ParallaxText() {
   const vantaRef = useRef(null);
 
   useEffect(() => {
-    console.log("running effect");
-
     if (!vantaEffect) {
       setVantaEffect(
         TRUNK({
@@ -32,12 +30,40 @@ export default function ParallaxText() {
       );
     }
     return () => {
-      console.log("destroying effect");
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       if (vantaEffect) vantaEffect.destroy();
     };
   }, [vantaEffect]);
 
-  return <div ref={vantaRef} style={{ height: "100vh" }}></div>;
+  const parallaxTexts = [
+    "/prompt Hello Paal, what can you tell me about the project?",
+    "/prompt Hola MyPaal, ¿cuéntame sobre el proyecto?",
+    "/提示 Hello MyPaal, 告诉我有关该项目的信息",
+    "/prompt Hallo MyPaal, erzähl mir etwas über das Projekt?",
+  ];
+
+  return (
+    <div className={styles.parallaxContainer}>
+      <div ref={vantaRef} className={styles.vantaBackground}></div>
+
+      {parallaxTexts.map((text, index) => (
+        <div
+          className={styles.parallaxTextContainer}
+          style={{
+            top: index * 100 + 200,
+          }}
+        >
+          <span
+            style={{
+              color: ["#ffffff", "#AC2BF9"][index % 2],
+            }}
+            className={styles.parallaxText}
+          >
+            {text}
+          </span>
+        </div>
+      ))}
+    </div>
+  );
 }

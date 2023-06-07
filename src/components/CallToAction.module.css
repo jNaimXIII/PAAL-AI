@@ -15,11 +15,14 @@
   font-size: 1.5rem;
 
   color: white;
+
+  transition: all 0.3s ease;
 }
 
 .callToAction:hover {
   background: #531279;
   cursor: pointer;
+  border: 1px solid transparent;
 }
 
 .uppercase {
