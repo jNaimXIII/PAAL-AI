@@ -1,0 +1,52 @@
+.discover-container {
+    background: url("../../assets/discover/discover-background.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    margin-top: 6rem;
+    padding: 1rem;
+}
+
+.discover-sub-heading {
+    display: block;
+
+    color: #ac2bf9;
+
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 139.5%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.discover-heading {
+    color: #ffffff;
+
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 76%;
+    text-align: center;
+    text-transform: uppercase;
+
+    max-width: 20ch;
+    margin: 0 auto;
+}
+
+.discover-graphic-container {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    top: -12rem;
+    z-index: -1;
+
+    .discover-graphic {
+        max-width: 100%;
+        display: block;
+    }
+}

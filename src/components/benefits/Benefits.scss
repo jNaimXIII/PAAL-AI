@@ -1,0 +1,66 @@
+.benefits-container {
+    margin: 7rem 0;
+}
+
+.benefits-heading {
+    color: #ac2bf9;
+
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 139.5%;
+    text-align: center;
+    text-transform: capitalize;
+
+    margin: 0;
+}
+
+.benefits-sub-heading {
+    color: #ffffff;
+
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 83%;
+    text-align: center;
+    text-transform: uppercase;
+
+    margin: 0;
+}
+
+.benefits-gallery {
+    display: flex;
+    gap: 3.5rem;
+}
+
+.benefits-showcase-row {
+    width: 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.benefits-showcase-image {
+    width: 50%;
+    max-width: 100%;
+}
+
+.benefits-showcase-item {
+    max-width: 100%;
+}
+
+.benefits-info {
+    color: #ffffff;
+
+    font-family: "Integral CF";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 139.5%;
+    text-align: center;
+    text-transform: uppercase;
+}

@@ -1,0 +1,20 @@
+.tagline-container {
+    padding: 6.25rem 0;
+
+    background: url("../../assets/tagline/tagline-banner.png") no-repeat center;
+    background-size: cover;
+}
+
+.tagline-text {
+    color: rgba(172, 43, 249, 0.5);
+
+    font-family: "Integral CF";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 139.5%;
+
+    text-align: center;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+}

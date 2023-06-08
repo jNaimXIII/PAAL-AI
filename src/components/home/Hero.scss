@@ -1,0 +1,30 @@
+.hero-container {
+    min-height: 100vh;
+    background: url("../../assets/hero/hero-background.png") no-repeat center;
+    background-size: cover;
+}
+
+.hero-heading {
+    color: #ffffff;
+
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 140.144px;
+    line-height: 78.5%;
+
+    margin: 0;
+}
+
+.hero-sub-heading {
+    color: #ac2bf9;
+
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-transform: capitalize;
+
+    margin: 0;
+}

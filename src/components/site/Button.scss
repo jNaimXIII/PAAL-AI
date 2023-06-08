@@ -1,0 +1,40 @@
+.button-wrapper {
+    display: inline-block;
+    background: linear-gradient(
+        96.47deg,
+        #ac2bf9 -59.11%,
+        #000000 48.29%,
+        #ac2bf9 165.02%
+    );
+
+    border-radius: 10px;
+
+    .button {
+        border-radius: 10px;
+        border: 1px solid #ac2bf9;
+
+        color: white;
+        font-family: "Integral CF";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 139.5%;
+        text-transform: uppercase;
+
+        padding: 1rem 2rem;
+
+        background: none;
+
+        transition: background 0.2s ease-in-out;
+
+        &-mini {
+            padding: 0.4rem 1rem;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background: #531279;
+            border: 1px solid transparent;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    // outline: 1px solid red;
+}
+
+body {
+    margin: 0;
+
+    background: black;
+}
+
+.site-content-container {
+    max-width: 1367px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 1rem;
+}
+
+.center-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
