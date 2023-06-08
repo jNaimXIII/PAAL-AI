@@ -52,8 +52,10 @@ const Services: FC = () => {
                             </span>
                         </div>
                         <div className="items">
-                            {freeServices.map((item) => (
-                                <span className="item">{item}</span>
+                            {freeServices.map((item, index) => (
+                                <span key={index} className="item">
+                                    {item}
+                                </span>
                             ))}
                         </div>
                     </div>
@@ -66,8 +68,10 @@ const Services: FC = () => {
                             </span>
                         </div>
                         <div className="items">
-                            {premiumServices.map((item) => (
-                                <span className="item">{item}</span>
+                            {premiumServices.map((item, index) => (
+                                <span key={index} className="item">
+                                    {item}
+                                </span>
                             ))}
                         </div>
                     </div>

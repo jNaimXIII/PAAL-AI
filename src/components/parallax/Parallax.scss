@@ -1,14 +1,14 @@
 .parallax-container {
     width: 100%;
 
-    position: relative;
+    // position: relative;
 }
 
 .vanta-background {
     height: 100vh;
     width: 100%;
 
-    position: fixed;
+    position: sticky;
     top: 0;
 
     z-index: -1;

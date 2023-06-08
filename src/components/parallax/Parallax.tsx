@@ -3,6 +3,7 @@ import "./Parallax.scss";
 import TRUNK from "vanta/src/vanta.trunk.js";
 import p5 from "p5";
 import { useInView } from "react-intersection-observer";
+import Discover from "../discover/Discover";
 
 // import ParallaxFillerImage from "../../assets/parallax/parallax-filler.png";
 
@@ -58,14 +59,18 @@ const Parallax: FC = () => {
             ))}
 
             {/* SPACER */}
-            <div style={{ height: "30vh" }} />
+            {/* <div style={{ height: "30vh" }} /> */}
 
-            <div
+            <div className="parallax-item" style={{ background: "black" }}>
+                <Discover />
+            </div>
+
+            {/* <div
                 className="parallax-item"
                 style={{
                     background: "black",
                 }}
-            />
+            /> */}
         </section>
     );
 };
