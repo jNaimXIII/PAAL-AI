@@ -15,13 +15,15 @@
 }
 
 .parallaxTextContainer {
-  height: 33vh;
+  height: 100vh;
   width: 100%;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
+  top: 0;
+  left: 0;
   position: sticky;
 }
 

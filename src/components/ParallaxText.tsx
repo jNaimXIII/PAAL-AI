@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import "./ParallaxText.css";
-import * as THREE from "three";
-import * as p5 from "p5";
+// import * as THREE from "three";
+// import * as p5 from "p5";
 import TRUNK from "vanta/dist/vanta.trunk.min";
 
 export default function ParallaxText() {
@@ -12,8 +12,8 @@ export default function ParallaxText() {
     if (!vantaEffect) {
       setVantaEffect(
         TRUNK({
-          THREE,
-          p5,
+          // THREE,
+          // p5,
           el: vantaRef.current,
           mouseControls: true,
           touchControls: true,
@@ -43,28 +43,62 @@ export default function ParallaxText() {
     "/prompt Hallo MyPaal, erzähl mir etwas über das Projekt?",
   ];
 
+  const [inViewItems, setInViewItems] = useState<number[]>([]);
+
+  const addInViewItem = (item: number) => setInViewItems((p) => [...p, item]);
+  const removeInViewItem = (item: number) =>
+    setInViewItems((p) => p.filter((i) => i !== item));
+
   return (
     <div className="parallaxContainer">
       <div ref={vantaRef} className="vantaBackground"></div>
 
       {parallaxTexts.map((text, index) => (
-        <div
-          key={index}
-          className="parallaxTextContainer"
-          style={{
-            top: index * 80 + 200,
-          }}
-        >
-          <span
-            style={{
-              color: ["#ffffff", "#AC2BF9"][index % 2],
-            }}
-            className="parallaxText"
-          >
-            {text}
-          </span>
-        </div>
+        <ParallaxContent
+          text={text}
+          index={index}
+          addInView={addInViewItem}
+          removeInView={removeInViewItem}
+          shouldView={true}
+        />
       ))}
+    </div>
+  );
+}
+
+import { useInView } from "react-intersection-observer";
+
+function ParallaxContent({ text, index, addInView, removeInView, shouldView }) {
+  const { ref, inView } = useInView({
+    threshold: 0,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      addInView(index);
+    } else removeInView(index);
+  }, [inView]);
+
+  return (
+    <div
+      key={index}
+      ref={ref}
+      className="parallaxTextContainer"
+      style={
+        {
+          // opacity: shouldView ? 1 : 0,
+          // opacity: inView ? 1 : 0,
+        }
+      }
+    >
+      <span
+        style={{
+          color: ["#ffffff", "#AC2BF9"][index % 2],
+        }}
+        className="parallaxText"
+      >
+        {text}
+      </span>
     </div>
   );
 }
