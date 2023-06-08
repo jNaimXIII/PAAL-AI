@@ -1,4 +1,4 @@
-import styles from "./CallToAction.module.css";
+import "./CallToAction.css";
 
 export type CallToActionProps = {
   label: string;
@@ -9,9 +9,5 @@ export default function CallToAction({
   label,
   textStyle = "uppercase",
 }: CallToActionProps) {
-  return (
-    <button className={`${styles.callToAction} ${styles[textStyle]}`}>
-      {label}
-    </button>
-  );
+  return <button className={`callToAction ${textStyle}`}>{label}</button>;
 }

@@ -1,13 +1,13 @@
-import styles from "./Hero.module.css";
+import "./Hero.css";
 import CallToAction from "./CallToAction";
 
 export default function Hero() {
   return (
-    <div className={styles.hero}>
-      <div className={styles.heroContent}>
-        <h1 className={styles.heroTitle}>PAAL AI</h1>
-        <span className={styles.heroSubtitle}>With multi platform support</span>
-        <p className={styles.heroText}>
+    <div className="hero">
+      <div className="heroContainer">
+        <h1 className="heroTitle">PAAL AI</h1>
+        <span className="heroSubtitle">With multi platform support</span>
+        <p className="heroText">
           A powerful AI ecosystem, predicated on principles of continuous
           learning and adaptation. Empowered by cutting-edge machine learning
           algorithms, it offers seamless integration across numerous platforms

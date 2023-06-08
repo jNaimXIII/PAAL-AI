@@ -1,4 +1,4 @@
-import styles from "./App.module.css";
+import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import ParallaxText from "./components/ParallaxText";
@@ -6,7 +6,7 @@ import ParallaxText from "./components/ParallaxText";
 function App() {
   return (
     <main>
-      <div className={styles.homeBackground}>
+      <div className="home-background">
         <div className="content">
           <Header />
 

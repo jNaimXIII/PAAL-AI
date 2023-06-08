@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import styles from "./ParallaxText.module.css";
+import "./ParallaxText.css";
 import * as THREE from "three";
 import * as p5 from "p5";
 import TRUNK from "vanta/dist/vanta.trunk.min";
@@ -44,12 +44,13 @@ export default function ParallaxText() {
   ];
 
   return (
-    <div className={styles.parallaxContainer}>
-      <div ref={vantaRef} className={styles.vantaBackground}></div>
+    <div className="parallaxContainer">
+      <div ref={vantaRef} className="vantaBackground"></div>
 
       {parallaxTexts.map((text, index) => (
         <div
-          className={styles.parallaxTextContainer}
+          key={index}
+          className="parallaxTextContainer"
           style={{
             top: index * 80 + 200,
           }}
@@ -58,7 +59,7 @@ export default function ParallaxText() {
             style={{
               color: ["#ffffff", "#AC2BF9"][index % 2],
             }}
-            className={styles.parallaxText}
+            className="parallaxText"
           >
             {text}
           </span>
