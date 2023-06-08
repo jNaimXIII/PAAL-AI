@@ -16,6 +16,10 @@
 
     max-width: 80ch;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+        font-size: 1.2rem;
+    }
 }
 
 .explore-cards {
@@ -53,5 +57,9 @@
         line-height: 104%;
         text-transform: uppercase;
         text-align: center;
+
+        @media (max-width: 768px) {
+            font-size: 1.2rem;
+        }
     }
 }

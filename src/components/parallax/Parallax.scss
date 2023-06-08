@@ -34,9 +34,32 @@
         font-size: 42.5px;
         line-height: 139.5%;
         text-transform: capitalize;
+        text-align: center;
+
+        padding: 1rem;
 
         &.alternative {
             color: white;
+        }
+
+        @media (max-width: 1400px) {
+            font-size: 30px;
+        }
+
+        @media (max-width: 960px) {
+            font-size: 28px;
+        }
+
+        @media (max-width: 578px) {
+            font-size: 22px;
+        }
+
+        @media (max-width: 420px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 330px) {
+            font-size: 1rem;
         }
     }
 }

@@ -3,7 +3,7 @@ import "./Empowered.scss";
 import { useInView } from "react-intersection-observer";
 
 import EmpoweredImage from "../../assets/empowered/empowered.png";
-import Services from "../services/Services";
+// import Services from "../services/Services";
 
 const Parallax: FC = () => {
     const parallaxTexts = [
@@ -33,23 +33,23 @@ const Parallax: FC = () => {
                     key={index}
                     label={text}
                     mini={index === 0}
-                    offset={index * 50 + 300}
+                    offset={index * 75 + 260}
                 />
             ))}
 
             {/* SPACER */}
-            {/* <div style={{ height: "30vh" }} /> */}
+            <div style={{ height: "30vh" }} />
 
-            <div className="parallax-item" style={{ background: "black" }}>
+            {/* <div className="parallax-item" style={{ background: "black" }}>
                 <Services />
-            </div>
+            </div> */}
 
-            {/* <div
+            <div
                 className="empowered-item"
                 style={{
                     background: "black",
                 }}
-            /> */}
+            />
         </section>
     );
 };

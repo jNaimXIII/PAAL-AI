@@ -20,6 +20,18 @@
     line-height: 78.5%;
 
     margin: 0;
+
+    @media (max-width: 540px) {
+        font-size: 100px;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 88px;
+    }
+
+    @media (max-width: 330px) {
+        font-size: 64px;
+    }
 }
 
 .hero-sub-heading {
@@ -33,10 +45,27 @@
     text-transform: capitalize;
 
     margin: 0;
+
+    @media (max-width: 540px) {
+        font-size: 26px;
+        line-height: 29px;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    @media (max-width: 330px) {
+        font-size: 18px;
+        line-height: 20px;
+    }
 }
 
 .hero-actions {
     display: flex;
     align-items: center;
     gap: 1.25rem;
+
+    flex-wrap: wrap;
 }

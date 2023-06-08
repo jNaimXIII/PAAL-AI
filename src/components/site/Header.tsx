@@ -7,7 +7,7 @@ import Button from "./Button";
 const Header: FC = () => {
     return (
         <header className="site-header site-content-container">
-            <img src={PAALAILogo} alt="PAAL AI Logo" />
+            <img src={PAALAILogo} alt="PAAL AI Logo" className="company-logo" />
 
             <Button label="Whitepaper" />
         </header>

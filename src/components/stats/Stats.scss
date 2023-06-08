@@ -6,6 +6,8 @@
     justify-content: center;
     align-items: center;
     gap: 4rem;
+
+    flex-wrap: wrap;
 }
 
 .stat-item {
@@ -24,6 +26,10 @@
 
         text-align: center;
         text-transform: uppercase;
+
+        @media (max-width: 768px) {
+            font-size: 64px;
+        }
     }
 
     .stat-label {

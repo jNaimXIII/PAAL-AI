@@ -4,4 +4,10 @@
     align-items: center;
 
     padding: 1rem 0;
+
+    .company-logo {
+        @media (max-width: 540px) {
+            width: 130px;
+        }
+    }
 }

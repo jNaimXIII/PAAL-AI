@@ -21,6 +21,10 @@
     line-height: 139.5%;
     text-align: center;
     text-transform: capitalize;
+
+    @media (max-width: 768px) {
+        font-size: 40px;
+    }
 }
 
 .discover-heading {
@@ -36,6 +40,14 @@
 
     max-width: 20ch;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+        font-size: 60px;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 40px;
+    }
 }
 
 .discover-graphic-container {
@@ -46,6 +58,13 @@
     top: -12rem;
     z-index: -1;
 
+    @media (max-width: 800px) {
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
     .discover-graphic {
         max-width: 100%;
         display: block;
@@ -53,6 +72,14 @@
 
     .sponsor-container {
         position: absolute;
-        bottom: 5rem;
+        // bottom: 5rem;
+        bottom: 10%;
+
+        @media (max-width: 800px) {
+            position: initial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }

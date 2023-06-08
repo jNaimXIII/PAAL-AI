@@ -13,6 +13,7 @@
         align-items: center;
         justify-content: space-between;
         gap: 3rem;
+        flex-wrap: wrap;
 
         .info {
             flex: 1;
@@ -56,6 +57,10 @@
             background: #000000;
             border-radius: 10.0214px;
 
+            @media (max-width: 520px) {
+                flex-direction: column;
+            }
+
             input {
                 color: white;
                 font-family: "Integral CF";
@@ -66,6 +71,10 @@
                 border: none;
 
                 padding: 0.1rem;
+
+                @media (max-width: 520px) {
+                    padding: 1rem;
+                }
             }
 
             button {

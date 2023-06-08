@@ -39,7 +39,11 @@ const Services: FC = () => {
                     Ethereum for service purchases, offering enticing discounts.
                 </p>
 
-                <Lottie animationData={ServicesRobotLottieAnimation} loop />
+                <Lottie
+                    animationData={ServicesRobotLottieAnimation}
+                    loop
+                    style={{ maxWidth: "100%" }}
+                />
             </div>
 
             <div className="services-col-right">
