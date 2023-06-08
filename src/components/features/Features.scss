@@ -85,10 +85,47 @@
     }
 }
 
-.feature-image {
+.feature-image-container {
+    position: relative;
     flex: 2.5;
 
-    max-width: 100%;
+    .feature-image {
+        max-width: 100%;
+    }
+
+    .feature-image-content-wrapper {
+        position: absolute;
+        bottom: 2rem;
+        width: 100%;
+
+        .feature-image-content {
+            width: fit-content;
+            margin: 0 auto;
+
+            .feature-image-content-sub-heading {
+                color: #ac2bf9;
+                display: block;
+
+                font-family: "Monument Extended";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 98%;
+                text-transform: uppercase;
+            }
+            .feature-image-content-heading {
+                color: #ffffff;
+                display: block;
+
+                font-family: "Monument Extended";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 3.25rem;
+                line-height: 98%;
+                text-transform: uppercase;
+            }
+        }
+    }
 }
 
 .features-info {

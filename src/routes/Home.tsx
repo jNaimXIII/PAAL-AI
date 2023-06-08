@@ -7,6 +7,7 @@ import Benefits from "../components/benefits/Benefits";
 import Divider from "../components/site/Divider";
 import Explore from "../components/explore/Explore";
 import Tagline from "../components/tagline/Tagline";
+import Empowered from "../components/empowered/Empowered";
 
 const Home: FC = () => {
     return (
@@ -28,6 +29,10 @@ const Home: FC = () => {
             <Features />
 
             <Benefits />
+
+            <Divider />
+            <Empowered />
+            <Divider />
         </>
     );
 };

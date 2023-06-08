@@ -40,11 +40,24 @@ const Features: FC = () => {
                     ))}
                 </div>
 
-                <img
-                    src={FeaturesRobotImage}
-                    alt="Features Robot"
-                    className="feature-image"
-                />
+                <div className="feature-image-container">
+                    <img
+                        src={FeaturesRobotImage}
+                        alt="Features Robot"
+                        className="feature-image"
+                    />
+
+                    <div className="feature-image-content-wrapper">
+                        <div className="feature-image-content">
+                            <span className="feature-image-content-sub-heading">
+                                Let's
+                            </span>
+                            <span className="feature-image-content-heading">
+                                Get started
+                            </span>
+                        </div>
+                    </div>
+                </div>
 
                 <div className="feature-cards">
                     {featuresGroupTwo.map((label, index) => (

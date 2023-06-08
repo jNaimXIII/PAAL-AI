@@ -58,6 +58,8 @@ const Parallax: FC = () => {
             ))}
 
             {/* SPACER */}
+            <div style={{ height: "30vh" }} />
+
             <div
                 className="parallax-item"
                 style={{

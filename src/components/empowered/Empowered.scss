@@ -1,0 +1,46 @@
+.parallax-container {
+    width: 100%;
+
+    position: relative;
+}
+
+.empowered-background {
+    height: 100vh;
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+
+    position: sticky;
+    top: 0;
+}
+
+.empowered-item {
+    height: 100vh;
+    width: 100%;
+
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .empowered-text {
+        color: white;
+
+        font-family: "Monument Extended";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4rem;
+        line-height: 95%;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        &-mini {
+            color: #ac2bf9;
+            font-size: 2rem;
+        }
+    }
+}

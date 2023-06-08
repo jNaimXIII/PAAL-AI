@@ -1,0 +1,33 @@
+.stats-container {
+}
+
+.stats-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .stat-number {
+        color: #ac2bf9;
+
+        font-family: "Integral CF";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 103.298px;
+
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .stat-label {
+        color: white;
+        text-transform: uppercase;
+    }
+}
