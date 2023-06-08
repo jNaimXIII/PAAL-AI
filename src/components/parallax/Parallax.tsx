@@ -8,32 +8,32 @@ const Parallax: FC = () => {
     const [vantaEffect, setVantaEffect] = useState(null);
     const vantaRef = useRef(null);
 
-    // useEffect(() => {
-    //     if (!vantaEffect) {
-    //         setVantaEffect(
-    //             TRUNK({
-    //                 p5,
-    //                 el: vantaRef.current,
-    //                 mouseControls: true,
-    //                 touchControls: true,
-    //                 gyroControls: false,
-    //                 minHeight: 200.0,
-    //                 minWidth: 200.0,
-    //                 scale: 1.0,
-    //                 scaleMobile: 1.0,
-    //                 color: 0x882db1,
-    //                 backgroundColor: 0x0,
-    //                 spacing: 8.0,
-    //                 chaos: 4.0,
-    //             })
-    //         );
-    //     }
-    //     return () => {
-    //         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    //         // @ts-ignore
-    //         if (vantaEffect) vantaEffect.destroy();
-    //     };
-    // }, [vantaEffect]);
+    useEffect(() => {
+        if (!vantaEffect) {
+            setVantaEffect(
+                TRUNK({
+                    p5,
+                    el: vantaRef.current,
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 200.0,
+                    minWidth: 200.0,
+                    scale: 1.0,
+                    scaleMobile: 1.0,
+                    color: 0x882db1,
+                    backgroundColor: 0x0,
+                    spacing: 8.0,
+                    chaos: 4.0,
+                })
+            );
+        }
+        return () => {
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
+            if (vantaEffect) vantaEffect.destroy();
+        };
+    }, [vantaEffect]);
 
     const parallaxTexts = [
         "/prompt Hello MyPaal, tell me about the project?",
@@ -44,7 +44,7 @@ const Parallax: FC = () => {
 
     return (
         <section className="parallax-container">
-            {/* <div className="vanta-background" ref={vantaRef} /> */}
+            <div className="vanta-background" ref={vantaRef} />
 
             {parallaxTexts.map((text, index) => (
                 <ParallaxItem

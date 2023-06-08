@@ -3,7 +3,7 @@ import "./Button.scss";
 
 export type Props = {
     label: string;
-    mini: boolean;
+    mini?: boolean;
 };
 
 const Button: FC<Props> = ({ label, mini }) => {
