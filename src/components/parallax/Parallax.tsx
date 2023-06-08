@@ -4,6 +4,8 @@ import TRUNK from "vanta/src/vanta.trunk.js";
 import p5 from "p5";
 import { useInView } from "react-intersection-observer";
 
+import ParallaxFillerImage from "../../assets/parallax/parallax-filler.png";
+
 const Parallax: FC = () => {
     const [vantaEffect, setVantaEffect] = useState(null);
     const vantaRef = useRef(null);
@@ -59,9 +61,18 @@ const Parallax: FC = () => {
             <div
                 className="parallax-item"
                 style={{
-                    background: "black",
-                    outline: "1px solid red;",
-                    height: "70vh",
+                    background: `
+                        linear-gradient(
+                            90deg,
+                            #000000 0.25%,
+                            rgba(0, 0, 0, 0.76) 23.54%,
+                            rgba(0, 0, 0, 0) 63.96%
+                        ),
+                        url(${ParallaxFillerImage})
+                    `,
+                    backgroundPosition: "center",
+                    backgroundSize: "cover",
+                    height: "69vh",
                 }}
             />
         </section>
