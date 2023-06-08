@@ -1,3 +1,3 @@
 /// <reference types="vite/client" />
 
-declare module "vanta/dist/vanta.trunk.min";
+declare module "vanta/src/vanta.trunk.js";

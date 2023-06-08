@@ -3,6 +3,7 @@ import "./Discover.scss";
 
 // TODO: get proper transparent image
 import DiscoverRobotImage from "../../assets/discover/discover-robot.png";
+import Sponsor from "../site/Sponsor";
 
 const Discover: FC = () => {
     return (
@@ -18,6 +19,10 @@ const Discover: FC = () => {
                     alt="Discover Robot"
                     className="discover-graphic"
                 />
+
+                <div className="sponsor-container">
+                    <Sponsor />
+                </div>
             </div>
         </section>
     );

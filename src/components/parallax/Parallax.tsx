@@ -1,7 +1,7 @@
 import { FC, useEffect, useRef, useState } from "react";
 import "./Parallax.scss";
-import TRUNK from "vanta/dist/vanta.trunk.min";
-import * as p5 from "p5";
+import TRUNK from "vanta/src/vanta.trunk.js";
+import p5 from "p5";
 import { useInView } from "react-intersection-observer";
 
 const Parallax: FC = () => {
@@ -51,8 +51,19 @@ const Parallax: FC = () => {
                     key={index}
                     label={text}
                     alternative={!!(index % 2)}
+                    offset={index * 60 - 100}
                 />
             ))}
+
+            {/* SPACER */}
+            <div
+                className="parallax-item"
+                style={{
+                    background: "black",
+                    outline: "1px solid red;",
+                    height: "70vh",
+                }}
+            />
         </section>
     );
 };
@@ -62,9 +73,14 @@ export default Parallax;
 type ParallaxItemProps = {
     label: string;
     alternative: boolean;
+    offset: number;
 };
 
-const ParallaxItem: FC<ParallaxItemProps> = ({ label, alternative }) => {
+const ParallaxItem: FC<ParallaxItemProps> = ({
+    label,
+    alternative,
+    offset,
+}) => {
     const { ref, inView } = useInView({
         threshold: 0.4,
     });
@@ -86,7 +102,13 @@ const ParallaxItem: FC<ParallaxItemProps> = ({ label, alternative }) => {
     }, [inView, label]);
 
     return (
-        <div className="parallax-item" ref={ref}>
+        <div
+            className="parallax-item"
+            ref={ref}
+            style={{
+                top: offset,
+            }}
+        >
             <span
                 className={`${alternative ? "alternative" : ""} parallax-text`}
             >

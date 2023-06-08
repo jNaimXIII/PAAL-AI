@@ -2,6 +2,7 @@ import { FC } from "react";
 import "./Hero.scss";
 import Header from "../site/Header";
 import Button from "../site/Button";
+import Sponsor from "../site/Sponsor";
 
 const Hero: FC = () => {
     return (
@@ -18,7 +19,10 @@ const Hero: FC = () => {
                 {/* SPACER */}
                 <div style={{ height: "2rem" }}></div>
 
-                <Button label="Whitepaper" />
+                <div className="hero-actions">
+                    <Button label="Whitepaper" />
+                    <Sponsor />
+                </div>
             </section>
         </div>
     );

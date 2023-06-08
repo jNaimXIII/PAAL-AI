@@ -1,6 +1,12 @@
 .hero-container {
     min-height: 100vh;
-    background: url("../../assets/hero/hero-background.png") no-repeat center;
+    background: linear-gradient(
+            90.28deg,
+            #000000 0.25%,
+            rgba(0, 0, 0, 0.76) 23.54%,
+            rgba(0, 0, 0, 0) 63.96%
+        ),
+        url("../../assets/hero/hero-background.png") no-repeat center;
     background-size: cover;
 }
 
@@ -27,4 +33,10 @@
     text-transform: capitalize;
 
     margin: 0;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
 }

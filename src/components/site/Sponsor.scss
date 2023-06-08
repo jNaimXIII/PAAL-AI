@@ -1,0 +1,18 @@
+.sponsor {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .sponsor-title {
+        color: white;
+
+        font-family: "Integral CF";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .sponsor-icon {
+        max-width: 100%;
+    }
+}
