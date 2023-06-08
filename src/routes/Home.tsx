@@ -8,6 +8,9 @@ import Divider from "../components/site/Divider";
 import Explore from "../components/explore/Explore";
 import Tagline from "../components/tagline/Tagline";
 import Empowered from "../components/empowered/Empowered";
+import Services from "../components/services/Services";
+import Whitelist from "../components/whitelist/Whitelist";
+import Footer from "../components/site/Footer";
 
 const Home: FC = () => {
     return (
@@ -33,6 +36,12 @@ const Home: FC = () => {
             <Divider />
             <Empowered />
             <Divider />
+
+            <Services />
+
+            <Whitelist />
+
+            <Footer />
         </>
     );
 };

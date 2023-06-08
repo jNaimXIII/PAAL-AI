@@ -63,18 +63,7 @@ const Parallax: FC = () => {
             <div
                 className="parallax-item"
                 style={{
-                    background: `
-                        linear-gradient(
-                            90deg,
-                            #000000 0.25%,
-                            rgba(0, 0, 0, 0.76) 23.54%,
-                            rgba(0, 0, 0, 0) 63.96%
-                        ),
-                        url(${ParallaxFillerImage})
-                    `,
-                    backgroundPosition: "center",
-                    backgroundSize: "cover",
-                    height: "69vh",
+                    background: "black",
                 }}
             />
         </section>

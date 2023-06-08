@@ -1,0 +1,87 @@
+.whitelist-section {
+    background: linear-gradient(
+        103.3deg,
+        rgba(0, 0, 0, 0.5) -26.79%,
+        rgba(172, 43, 249, 0.5) 49.09%,
+        rgba(0, 0, 0, 0.5) 118.9%
+    );
+    backdrop-filter: blur(5.01069px);
+    border: 0.5px solid #ffffffaa;
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+
+        .info {
+            flex: 1;
+
+            h3 {
+                color: white;
+
+                font-family: "Integral CF";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 151%;
+
+                text-transform: uppercase;
+
+                max-width: 25ch;
+            }
+
+            p {
+                color: #ffffff;
+
+                font-family: "Integral CF";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 151%;
+
+                text-transform: capitalize;
+            }
+        }
+
+        .inputs {
+            flex: 1;
+            gap: 0.4rem;
+
+            display: flex;
+            justify-content: flex-end;
+
+            padding: 0.5rem 0.8rem;
+
+            background: #000000;
+            border-radius: 10.0214px;
+
+            input {
+                color: white;
+                font-family: "Integral CF";
+
+                flex: 1;
+                max-width: 700px;
+                background: none;
+                border: none;
+
+                padding: 0.1rem;
+            }
+
+            button {
+                color: #ffffff;
+
+                background: #ac2bf9;
+                border-radius: 10.0214px;
+                padding: 0.8rem 2.75rem;
+
+                font-family: "Integral CF";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 151%;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

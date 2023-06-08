@@ -11,7 +11,12 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^6.4.0",
+        "@fortawesome/free-brands-svg-icons": "^6.4.0",
+        "@fortawesome/free-regular-svg-icons": "^6.4.0",
+        "@fortawesome/react-fontawesome": "^0.2.0",
         "@types/p5": "^1.6.2",
+        "lottie-react": "^2.4.0",
         "p5": "^1.6.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",

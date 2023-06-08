@@ -1,0 +1,145 @@
+.services-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+
+    margin-top: 7rem;
+}
+
+.services-col-left {
+    flex: 1;
+
+    .services-heading {
+        color: #ffffff;
+
+        font-family: "Monument Extended";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 54.3345px;
+        line-height: 95%;
+        text-transform: uppercase;
+
+        margin: 0;
+    }
+
+    .services-info {
+        color: #ffffff;
+
+        font-family: "Integral CF";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 139.5%;
+        text-transform: uppercase;
+    }
+}
+
+.services-col-right {
+    flex: 1.5;
+}
+
+.service-lists {
+    display: flex;
+    gap: 2.5rem;
+
+    color: white;
+
+    .list {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        border-radius: 10.0214px;
+        border: 1px solid #ffffffaa;
+
+        .heading {
+            background: linear-gradient(
+                103.3deg,
+                #000000 -26.79%,
+                #4c196a 49.09%,
+                #000000 118.9%
+            );
+            backdrop-filter: blur(5.01069px);
+            border-radius: 10.0214px;
+            border: 1px solid #ffffffaa;
+
+            padding: 2rem;
+
+            .name {
+                font-family: "Integral CF";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 151%;
+                text-align: center;
+                text-transform: uppercase;
+
+                margin: 0;
+            }
+            .description {
+                display: block;
+
+                font-family: "Integral CF";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 151%;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+
+        .items {
+            display: flex;
+            flex-direction: column;
+
+            gap: 1.5rem;
+
+            padding: 3rem 2rem;
+
+            .item {
+                color: #ffffff;
+
+                font-family: "Integral CF";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 121%;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .sub-title {
+        color: #ffffff;
+
+        font-family: "Integral CF";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 151%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.service-titles {
+    display: flex;
+    gap: 2.5rem;
+
+    .title {
+        flex: 1;
+        color: #ffffff;
+        text-align: center;
+
+        font-family: "Integral CF";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 151%;
+
+        text-align: center;
+        text-transform: uppercase;
+    }
+}

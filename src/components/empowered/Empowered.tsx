@@ -40,12 +40,9 @@ const Parallax: FC = () => {
             <div style={{ height: "30vh" }} />
 
             <div
+                className="empowered-item"
                 style={{
-                    position: "sticky",
                     background: "black",
-                    backgroundPosition: "center",
-                    backgroundSize: "cover",
-                    height: "55vh",
                 }}
             />
         </section>
