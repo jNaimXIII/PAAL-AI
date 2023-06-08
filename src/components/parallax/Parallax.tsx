@@ -46,7 +46,7 @@ const Parallax: FC = () => {
 
     return (
         <section className="parallax-container">
-            <div className="vanta-background" ref={vantaRef} />
+            <div className="vanta-background" ref={vantaRef}></div>
 
             {parallaxTexts.map((text, index) => (
                 <ParallaxItem
