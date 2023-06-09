@@ -3,8 +3,8 @@ import "./Parallax.scss";
 import TRUNK from "vanta/src/vanta.trunk.js";
 import p5 from "p5";
 import { useInView } from "react-intersection-observer";
-import ColorDrops from "../transitions/ColorDrops";
-// import Discover from "../discover/Discover";
+// import ColorDrops from "../transitions/ColorDrops";
+import Discover from "../discover/Discover";
 
 // import ParallaxFillerImage from "../../assets/parallax/parallax-filler.png";
 
@@ -63,12 +63,13 @@ const Parallax: FC = () => {
             {/* <div style={{ height: "30vh" }} /> */}
 
             <div
-                className="parallax-item"
                 style={{
+                    position: "sticky",
                     background: "black",
                 }}
             >
-                <ColorDrops />
+                {/* <ColorDrops /> */}
+                <Discover />
             </div>
         </section>
     );

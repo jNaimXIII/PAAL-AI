@@ -3,8 +3,8 @@ import "./Empowered.scss";
 import { useInView } from "react-intersection-observer";
 
 import EmpoweredImage from "../../assets/empowered/empowered.png";
-import BubbleFloat from "../transitions/BubbleFloat";
-// import Services from "../services/Services";
+// import BubbleFloat from "../transitions/BubbleFloat";
+import Services from "../services/Services";
 
 const Parallax: FC = () => {
     const parallaxTexts = [
@@ -46,12 +46,13 @@ const Parallax: FC = () => {
             </div> */}
 
             <div
-                className="empowered-item"
                 style={{
+                    position: "sticky",
                     background: "black",
                 }}
             >
-                <BubbleFloat />
+                {/* <BubbleFloat /> */}
+                <Services />
             </div>
         </section>
     );

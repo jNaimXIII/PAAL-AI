@@ -56,7 +56,6 @@
 
     position: relative;
     top: -12rem;
-    z-index: -1;
 
     @media (max-width: 800px) {
         top: 0;
@@ -68,6 +67,9 @@
     .discover-graphic {
         max-width: 100%;
         display: block;
+
+        position: relative;
+        z-index: -1;
     }
 
     .sponsor-container {
