@@ -101,6 +101,12 @@
 
 .benefits-showcase-item {
     max-width: 100%;
+
+    &.mobile-hidden-item {
+        @media (max-width: 580px) {
+            display: none;
+        }
+    }
 }
 
 .benefits-info {

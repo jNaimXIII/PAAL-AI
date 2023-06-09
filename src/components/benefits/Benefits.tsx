@@ -33,7 +33,11 @@ const Benefits: FC = () => {
             <div className="benefits-gallery site-content-container">
                 <div className="benefits-showcase-row">
                     {benefitsShowcaseItemsRowOne.map((item, index) => (
-                        <BenefitsShowcaseItem key={index} background={item} />
+                        <BenefitsShowcaseItem
+                            key={index}
+                            background={item}
+                            mobileHidden
+                        />
                     ))}
                 </div>
 
@@ -45,7 +49,11 @@ const Benefits: FC = () => {
 
                 <div className="benefits-showcase-row">
                     {benefitsShowcaseItemsRowTwo.map((item, index) => (
-                        <BenefitsShowcaseItem key={index} background={item} />
+                        <BenefitsShowcaseItem
+                            key={index}
+                            background={item}
+                            mobileHidden={index === 0}
+                        />
                     ))}
                 </div>
             </div>
@@ -70,10 +78,20 @@ export default Benefits;
 
 type BenefitsShowcaseItemProps = {
     background: string;
+    mobileHidden: boolean;
 };
 
 const BenefitsShowcaseItem: FC<BenefitsShowcaseItemProps> = ({
     background,
+    mobileHidden,
 }) => {
-    return <img src={background} alt="" className="benefits-showcase-item" />;
+    return (
+        <img
+            src={background}
+            alt=""
+            className={`${
+                mobileHidden ? "mobile-hidden-item" : ""
+            } benefits-showcase-item`}
+        />
+    );
 };

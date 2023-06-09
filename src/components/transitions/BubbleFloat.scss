@@ -16,6 +16,12 @@ $sway-type: "sway-left-to-right", "sway-right-to-left";
     height: 100vh;
     width: 100%;
     overflow: hidden;
+
+    background: linear-gradient(
+        #ac2bf9 -59.11%,
+        #000000 48.29%,
+        #ac2bf9 165.02%
+    );
 }
 
 .bubble {

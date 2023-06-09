@@ -58,9 +58,17 @@
 .service-lists {
     display: flex;
     gap: 2.5rem;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
 
     color: white;
+
+    @media (max-width: 675px) {
+        gap: 1rem;
+    }
+
+    @media (max-width: 400px) {
+        gap: 0.4rem;
+    }
 
     .list {
         flex: 1;
@@ -83,6 +91,10 @@
 
             padding: 2rem;
 
+            @media (max-width: 675px) {
+                padding: 1rem;
+            }
+
             .name {
                 font-family: "Integral CF";
                 font-style: normal;
@@ -94,8 +106,12 @@
 
                 margin: 0;
 
-                @media (max-width: 512px) {
+                @media (max-width: 675px) {
                     font-size: 26px;
+                }
+
+                @media (max-width: 400px) {
+                    font-size: 20px;
                 }
             }
             .description {
@@ -109,8 +125,12 @@
                 text-align: center;
                 text-transform: uppercase;
 
-                @media (max-width: 512px) {
-                    font-size: 18px;
+                @media (max-width: 675px) {
+                    font-size: 16px;
+                }
+
+                @media (max-width: 400px) {
+                    font-size: 14px;
                 }
             }
         }
@@ -123,6 +143,15 @@
 
             padding: 3rem 2rem;
 
+            @media (max-width: 675px) {
+                padding: 2rem 1rem;
+            }
+
+            @media (max-width: 400px) {
+                padding: 1rem 0.4rem;
+                gap: 1rem;
+            }
+
             .item {
                 color: #ffffff;
 
@@ -134,12 +163,16 @@
                 text-align: center;
                 text-transform: uppercase;
 
-                @media (max-width: 512px) {
+                @media (max-width: 675px) {
                     font-size: 26px;
                 }
 
-                @media (max-width: 400px) {
+                @media (max-width: 512px) {
                     font-size: 18px;
+                }
+
+                @media (max-width: 400px) {
+                    font-size: 16px;
                 }
             }
         }

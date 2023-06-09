@@ -63,12 +63,16 @@
     justify-content: center;
     gap: 2rem;
 
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
+
     @media (max-width: 768px) {
         flex-direction: column;
     }
 
-    @media (max-width: 1000px) {
-        flex-direction: column;
+    @media (max-width: 768px) {
+        gap: 1rem;
     }
 }
 
@@ -83,11 +87,19 @@
     @media (max-width: 1000px) {
         order: 2;
     }
+
+    @media (max-width: 768px) {
+        gap: 1rem;
+    }
 }
 
 .feature-card {
     flex: 1;
     padding: 1.6rem 2.4rem;
+
+    @media (max-width: 768px) {
+        padding: 1.2rem 2rem;
+    }
 
     display: flex;
     justify-content: center;
@@ -114,6 +126,10 @@
         line-height: 104%;
         text-transform: uppercase;
         text-align: center;
+
+        @media (max-width: 768px) {
+            font-size: 1.2rem;
+        }
     }
 }
 
@@ -123,7 +139,8 @@
     margin: 0 auto;
 
     @media (max-width: 1000px) {
-        order: 1;
+        // order: 1;
+        display: none;
     }
 
     .feature-image {

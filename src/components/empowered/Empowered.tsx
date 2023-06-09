@@ -34,7 +34,7 @@ const Parallax: FC = () => {
                     key={index}
                     label={text}
                     mini={index === 0}
-                    offset={index * 75 + 260}
+                    offset={index * 75 + 190}
                 />
             ))}
 
