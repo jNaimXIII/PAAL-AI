@@ -21,16 +21,16 @@ const Benefits: FC = () => {
 
     return (
         <section className="benefits-container">
-            <h1 className="benefits-heading site-content-container">
+            <h1 className="benefits-heading site-content-container benefits-mobile-hidden">
                 Benefits
             </h1>
 
-            <p className="benefits-sub-heading site-content-container">
+            <p className="benefits-sub-heading site-content-container benefits-mobile-hidden">
                 the benefits of PAAL, our personalized AI and ML chatbot
                 solution
             </p>
 
-            <div className="benefits-gallery site-content-container">
+            <div className="benefits-gallery site-content-container benefits-mobile-hidden">
                 <div className="benefits-showcase-row">
                     {benefitsShowcaseItemsRowOne.map((item, index) => (
                         <BenefitsShowcaseItem
@@ -59,7 +59,7 @@ const Benefits: FC = () => {
             </div>
 
             {/* SPACER */}
-            <div style={{ height: "7.5rem" }} />
+            {/* <div style={{ height: "7.5rem" }} /> */}
 
             <p className="benefits-info site-content-container">
                 Leverage the strength of machine learning with PAAL, using

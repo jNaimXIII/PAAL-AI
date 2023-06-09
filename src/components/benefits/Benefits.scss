@@ -124,3 +124,9 @@
         font-size: 20px;
     }
 }
+
+.benefits-mobile-hidden {
+    @media (max-width: 580px) {
+        display: none;
+    }
+}
