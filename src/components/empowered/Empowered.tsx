@@ -3,6 +3,7 @@ import "./Empowered.scss";
 import { useInView } from "react-intersection-observer";
 
 import EmpoweredImage from "../../assets/empowered/empowered.png";
+import BubbleFloat from "../transitions/BubbleFloat";
 // import Services from "../services/Services";
 
 const Parallax: FC = () => {
@@ -49,7 +50,9 @@ const Parallax: FC = () => {
                 style={{
                     background: "black",
                 }}
-            />
+            >
+                <BubbleFloat />
+            </div>
         </section>
     );
 };

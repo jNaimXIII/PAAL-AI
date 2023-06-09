@@ -1,0 +1,62 @@
+@use "sass:math";
+
+$total: 144;
+$time: 4;
+$height: 400;
+$percent: 0.69444%;
+$dotSize: 0.9;
+
+* {
+    box-sizing: border-box;
+}
+
+.color-drops-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.color-drop {
+    position: relative;
+    height: $height + px;
+    width: $percent;
+    margin-top: -$height + px;
+    animation: drop $time + s infinite ease-in;
+    &:after {
+        content: "";
+        position: absolute;
+        width: $dotSize + vw;
+        height: $dotSize + vw;
+        border-radius: 50%;
+        left: 50%;
+        bottom: -($dotSize * 0.5) + vw;
+        margin-left: -($dotSize * 0.5) + vw;
+    }
+}
+
+@for $i from 1 through $total {
+    $hue: math.div(300, $total) * $i;
+    .color-drop:nth-child(#{$i}) {
+        left: ($i - 1) * $percent;
+        background-image: linear-gradient(
+            to bottom,
+            black,
+            hsla($hue, 100%, 50%, 0.8)
+        );
+        animation-delay: random($total) * math.div($time, $total) * -1s;
+        &:after {
+            background: hsla($hue, 100%, 50%, 1);
+        }
+    }
+}
+
+@keyframes drop {
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate3d(0, 150vh, 0);
+        opacity: 0;
+    }
+}

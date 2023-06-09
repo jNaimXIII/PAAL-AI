@@ -50,6 +50,9 @@
 
 .services-col-right {
     flex: 1.8;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
 
 .service-lists {
