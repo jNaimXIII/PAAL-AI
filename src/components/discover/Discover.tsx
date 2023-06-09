@@ -21,7 +21,7 @@ const Discover: FC = () => {
                 />
 
                 <div className="sponsor-container">
-                    <Sponsor />
+                    <Sponsor mobileCenter />
                 </div>
             </div>
         </section>

@@ -1,3 +1,10 @@
+.services-wrapper {
+    background: url("../../assets/discover/discover-background.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 .services-container {
     display: flex;
     gap: 2rem;
@@ -6,6 +13,11 @@
     margin-top: 7rem;
 
     flex-wrap: wrap;
+}
+
+.services-col-left,
+.services-col-right {
+    padding-top: 4rem;
 }
 
 .services-col-left {
@@ -70,13 +82,56 @@
         gap: 0.4rem;
     }
 
-    .list {
+    .list-wrapper {
         flex: 1;
         display: flex;
+
+        padding: 4px;
+        border-radius: 10.0214px;
+
+        @keyframes GradientBorder {
+            0% {
+                background-position: 78% 0%;
+            }
+            50% {
+                background-position: 23% 100%;
+            }
+            100% {
+                background-position: 78% 0%;
+            }
+        }
+
+        background: linear-gradient(264deg, #ac2bf9, #4c196a, #2ba6f9);
+        background-size: 600% 600%;
+
+        animation: GradientBorder 3s ease infinite;
+
+        &-alt {
+            @keyframes GradientAlt {
+                0% {
+                    background-position: 58% 100%;
+                }
+                50% {
+                    background-position: 43% 0%;
+                }
+                100% {
+                    background-position: 43% 0%;
+                }
+            }
+            background: linear-gradient(19deg, #00f2ff, #ac2bf9, #414141);
+            background-size: 600% 600%;
+
+            animation: GradientAlt 3s ease infinite;
+        }
+    }
+
+    .list {
+        display: flex;
         flex-direction: column;
+        background: black;
 
         border-radius: 10.0214px;
-        border: 1px solid #ffffffaa;
+        // border: 1px solid #ffffffaa;
 
         .heading {
             background: linear-gradient(
@@ -87,7 +142,7 @@
             );
             backdrop-filter: blur(5.01069px);
             border-radius: 10.0214px;
-            border: 1px solid #ffffffaa;
+            border-bottom: 1px solid #ffffffaa;
 
             padding: 2rem;
 

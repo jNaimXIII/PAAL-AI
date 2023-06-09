@@ -144,13 +144,14 @@
     }
 
     .feature-image {
-        max-width: 100%;
+        width: 100%;
     }
 
     .feature-image-content-wrapper {
         position: absolute;
         bottom: 2rem;
-        width: 100%;
+        // width: 100%;
+        width: fit-content;
 
         .feature-image-content {
             // width: fit-content;

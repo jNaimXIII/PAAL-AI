@@ -62,11 +62,9 @@ const Benefits: FC = () => {
             <div style={{ height: "7.5rem" }} />
 
             <p className="benefits-info site-content-container">
-                PAAL (Personalized AI Assistant) is an advanced chatbot built on
-                AI and ML technologies, designed to streamline tasks that
-                typically require human intellect, such as natural language
-                understanding, image recognition, decision-making, and
-                problem-solving.
+                Leverage the strength of machine learning with PAAL, using
+                algorithms that construct models from training data,
+                facilitating informed predictions or decisions
             </p>
 
             <Stats />

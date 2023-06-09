@@ -20,17 +20,20 @@
     line-height: 78.5%;
 
     margin: 0;
+    margin-top: 18rem;
 
     @media (max-width: 540px) {
         font-size: 100px;
+
+        margin-top: 8rem;
     }
 
-    @media (max-width: 420px) {
-        font-size: 88px;
+    @media (max-width: 425px) {
+        // font-size: 88px;
+        font-size: 64px;
     }
 
     @media (max-width: 330px) {
-        font-size: 64px;
     }
 }
 
@@ -51,21 +54,55 @@
         line-height: 29px;
     }
 
-    @media (max-width: 420px) {
-        font-size: 22px;
-        line-height: 24px;
+    @media (max-width: 425px) {
+        font-size: 18px;
+        line-height: 20px;
+        // font-size: 22px;
+        // line-height: 24px;
     }
 
     @media (max-width: 330px) {
-        font-size: 18px;
-        line-height: 20px;
+        // font-size: 18px;
+        // line-height: 20px;
     }
+}
+
+.sponsor-row {
+    max-width: fit-content;
 }
 
 .hero-actions {
     display: flex;
     align-items: center;
-    gap: 1.25rem;
 
-    flex-wrap: wrap;
+    @media (max-width: 410px) {
+        // justify-content: center;
+    }
+}
+
+.hero-socials {
+    max-width: fit-content;
+
+    @media (max-width: 410px) {
+        // margin: 0 auto;
+    }
+}
+
+.wallet-address {
+    color: #ac2bf9;
+
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 43px;
+    text-transform: capitalize;
+
+    margin-top: 12rem;
+
+    @media (max-width: 768px) {
+        margin-top: 7rem;
+
+        font-size: 16px;
+    }
 }

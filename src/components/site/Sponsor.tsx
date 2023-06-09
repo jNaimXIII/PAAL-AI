@@ -3,9 +3,13 @@ import "./Sponsor.scss";
 
 import GoogleCloudLogo from "../../assets/icons/google-cloud-logo.png";
 
-const Sponsor: FC = () => {
+type SponsorProps = {
+    mobileCenter?: boolean;
+};
+
+const Sponsor: FC<SponsorProps> = ({ mobileCenter }) => {
     return (
-        <div className="sponsor">
+        <div className={`sponsor ${mobileCenter ? "mobile-sponsor" : ""}`}>
             <span className="sponsor-title">In partnership with</span>
             <img
                 className="sponsor-icon"

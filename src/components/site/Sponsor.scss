@@ -1,9 +1,15 @@
 .sponsor {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
+
+    &.mobile-sponsor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
 
     .sponsor-title {
         color: white;
