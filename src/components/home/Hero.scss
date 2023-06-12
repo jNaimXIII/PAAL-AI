@@ -9,7 +9,7 @@
         url("../../assets/hero/hero-background.png") no-repeat center;
     background-size: cover;
 
-    @media (max-width: 425px) {
+    @media (max-width: 480px) {
         background: linear-gradient(
                 180deg,
                 #000000 13.02%,
@@ -24,7 +24,7 @@
 }
 
 .hero-content {
-    @media (max-width: 425px) {
+    @media (max-width: 480px) {
         min-height: calc(100vh - 8rem);
         display: flex;
         flex-direction: column;
@@ -36,8 +36,9 @@
 }
 
 .hero-bottom {
-    @media (max-width: 425px) {
+    @media (max-width: 480px) {
         display: flex;
+        gap: 1rem;
         flex-wrap: wrap-reverse;
         justify-content: space-between;
         align-items: center;
@@ -62,7 +63,7 @@
         margin-top: 8rem;
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: 480px) {
         margin-top: 2rem;
 
         // font-size: 88px;
@@ -92,7 +93,7 @@
         line-height: 29px;
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: 480px) {
         font-size: 18px;
         line-height: 20px;
         // font-size: 22px;
@@ -109,7 +110,7 @@
 .sponsor-row {
     max-width: fit-content;
 
-    @media (max-width: 425px) {
+    @media (max-width: 480px) {
         margin: 0 auto;
     }
 }
@@ -120,7 +121,7 @@
 
     margin-top: 4rem;
 
-    @media (max-width: 425px) {
+    @media (max-width: 480px) {
         margin-top: 0;
     }
 
@@ -134,7 +135,7 @@
 
     margin-top: 2rem;
 
-    @media (max-width: 425px) {
+    @media (max-width: 480px) {
         margin-top: 0;
     }
 
@@ -153,7 +154,8 @@
     line-height: 43px;
     text-transform: capitalize;
 
-    margin-top: 12rem;
+    // margin-top: 12rem;
+    margin-top: 8rem;
 
     @media (max-width: 768px) {
         margin-top: 7rem;
@@ -161,7 +163,9 @@
         font-size: 16px;
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: 480px) {
+        margin-top: 0;
+
         font-size: 12px;
         color: white;
     }
