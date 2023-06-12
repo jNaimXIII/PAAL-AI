@@ -20,12 +20,14 @@
             ),
             url("../../assets/hero/hero-background.png") no-repeat center;
         background-size: cover;
+
+        background-position-x: 60%;
     }
 }
 
 .hero-content {
     @media (max-width: 480px) {
-        min-height: calc(100vh - 8rem);
+        min-height: calc(100vh - 12rem);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -94,7 +96,7 @@
     }
 
     @media (max-width: 480px) {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 20px;
         // font-size: 22px;
         // line-height: 24px;
@@ -110,8 +112,11 @@
 .sponsor-row {
     max-width: fit-content;
 
+    margin-top: 2rem;
+
     @media (max-width: 480px) {
         margin: 0 auto;
+        margin-top: 0.4rem;
     }
 }
 

@@ -24,6 +24,10 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 18px;
+
+        @media (max-width: 480px) {
+            font-size: 13px;
+        }
     }
 
     .sponsor-icon {
@@ -31,6 +35,10 @@
 
         @media (max-width: 512px) {
             height: 24px;
+        }
+
+        @media (max-width: 480px) {
+            height: 18px;
         }
     }
 }

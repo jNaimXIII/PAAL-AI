@@ -20,9 +20,6 @@ const Hero: FC = () => {
                         With multi platform support
                     </p>
 
-                    {/* SPACER */}
-                    <div style={{ height: "2rem" }}></div>
-
                     <div className="sponsor-row">
                         <Sponsor />
                     </div>
