@@ -101,10 +101,11 @@
             }
         }
 
-        background: linear-gradient(264deg, #ac2bf9, #4c196a, #2ba6f9);
-        background-size: 600% 600%;
+        background: white;
+        // background: linear-gradient(264deg, #ac2bf9, #4c196a, #2ba6f9);
+        // background-size: 600% 600%;
 
-        animation: GradientBorder 3s ease infinite;
+        // animation: GradientBorder 3s ease infinite;
 
         &-alt {
             @keyframes GradientAlt {
@@ -118,10 +119,12 @@
                     background-position: 43% 0%;
                 }
             }
-            background: linear-gradient(19deg, #00f2ff, #ac2bf9, #414141);
-            background-size: 600% 600%;
 
-            animation: GradientAlt 3s ease infinite;
+            background: white;
+            // background: linear-gradient(19deg, #00f2ff, #ac2bf9, #414141);
+            // background-size: 600% 600%;
+
+            // animation: GradientAlt 3s ease infinite;
         }
     }
 

@@ -14,6 +14,19 @@
     z-index: -1;
 }
 
+.initial-parallax-item {
+    height: 100vh;
+    width: 100%;
+
+    position: relative;
+    z-index: 1;
+    top: -170;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .parallax-item {
     height: 100vh;
     width: 100%;
@@ -24,42 +37,43 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
-    .parallax-text {
-        color: #ac2bf9;
+.initial-parallax-item .parallax-text,
+.parallax-item .parallax-text {
+    color: #ac2bf9;
 
-        font-family: "Integral CF";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 42.5px;
-        line-height: 139.5%;
-        text-transform: capitalize;
-        text-align: center;
+    font-family: "Integral CF";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42.5px;
+    line-height: 139.5%;
+    text-transform: capitalize;
+    text-align: center;
 
-        padding: 1rem;
+    padding: 1rem;
 
-        &.alternative {
-            color: white;
-        }
+    &.alternative {
+        color: white;
+    }
 
-        @media (max-width: 1400px) {
-            font-size: 30px;
-        }
+    @media (max-width: 1400px) {
+        font-size: 30px;
+    }
 
-        @media (max-width: 960px) {
-            font-size: 28px;
-        }
+    @media (max-width: 960px) {
+        font-size: 28px;
+    }
 
-        @media (max-width: 578px) {
-            font-size: 22px;
-        }
+    @media (max-width: 578px) {
+        font-size: 22px;
+    }
 
-        @media (max-width: 420px) {
-            font-size: 18px;
-        }
+    @media (max-width: 420px) {
+        font-size: 18px;
+    }
 
-        @media (max-width: 330px) {
-            font-size: 1rem;
-        }
+    @media (max-width: 330px) {
+        font-size: 1rem;
     }
 }

@@ -40,7 +40,7 @@ const Parallax: FC = () => {
     }, [vantaEffect]);
 
     const parallaxTexts = [
-        "/prompt Hello MyPaal, tell me about the project?",
+        // "/prompt Hello MyPaal, tell me about the project?",
         "/prompt Hola MyPaal, ¿cuéntame sobre el proyecto?",
         "/提示 Hello MyPaal, 告诉我有关该项目的信息",
         "/prompt Hallo MyPaal, erzähl mir etwas über das Projekt?",
@@ -48,13 +48,17 @@ const Parallax: FC = () => {
 
     return (
         <section className="parallax-container">
-            <div className="vanta-background" ref={vantaRef}></div>
+            <div className="vanta-background" ref={vantaRef}>
+                <InitialParallaxItem
+                    label={"/prompt Hello MyPaal, tell me about the project?"}
+                />
+            </div>
 
             {parallaxTexts.map((text, index) => (
                 <ParallaxItem
                     key={index}
                     label={text}
-                    alternative={!!(index % 2)}
+                    alternative={!!(index % 2 === 1)}
                     offset={index * 70 - 100}
                 />
             ))}
@@ -121,6 +125,38 @@ const ParallaxItem: FC<ParallaxItemProps> = ({
             >
                 {shownText}
             </span>
+        </div>
+    );
+};
+
+type InitialParallaxItemProps = {
+    label: string;
+};
+
+const InitialParallaxItem: FC<InitialParallaxItemProps> = ({ label }) => {
+    const { ref, inView } = useInView({
+        threshold: 0.4,
+    });
+
+    const [shownText, setShownText] = useState("");
+
+    useEffect(() => {
+        const RATE = 50;
+
+        if (inView) {
+            const interval = setInterval(() => {
+                setShownText((curr) => label.slice(0, curr.length + 1));
+            }, RATE);
+
+            return () => clearInterval(interval);
+        } else {
+            setShownText("");
+        }
+    }, [inView, label]);
+
+    return (
+        <div className="initial-parallax-item" ref={ref}>
+            <span className="parallax-text alternative">{shownText}</span>
         </div>
     );
 };
