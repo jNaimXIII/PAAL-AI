@@ -17,4 +17,8 @@
     text-align: center;
     letter-spacing: 0.34em;
     text-transform: uppercase;
+
+    @media (max-width: 480px) {
+        font-size: 14px;
+    }
 }

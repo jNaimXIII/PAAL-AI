@@ -8,6 +8,10 @@
     gap: 4rem;
 
     flex-wrap: wrap;
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+    }
 }
 
 .stat-item {
@@ -29,6 +33,10 @@
 
         @media (max-width: 768px) {
             font-size: 64px;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 44px;
         }
     }
 

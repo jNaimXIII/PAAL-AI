@@ -13,11 +13,10 @@ const Explore: FC = () => {
     return (
         <section className="explore-container site-content-container">
             <p className="explore-info">
-                PAAL (Personalized AI Assistant) is an advanced chatbot built on
-                AI and ML technologies, designed to streamline tasks that
-                typically require human intellect, such as natural language
-                understanding, image recognition, decision-making, and
-                problem-solving.
+                PAAL is an advanced chatbot built on AI and ML technologies,
+                designed to streamline tasks that typically require human
+                intellect, such as natural language understanding, image
+                recognition, decision-making, and problem-solving.
             </p>
 
             <div className="explore-cards">

@@ -27,7 +27,7 @@ const Hero: FC = () => {
 
                 <div className="hero-bottom">
                     <div className="hero-actions">
-                        <Button label="Whitepaper" />
+                        <Button label="Start now" />
                     </div>
 
                     <div className="hero-socials">

@@ -57,6 +57,10 @@
         @media (max-width: 512px) {
             font-size: 16px;
         }
+
+        @media (max-width: 480px) {
+            font-size: 14px;
+        }
     }
 }
 
@@ -153,6 +157,10 @@
                 padding: 1rem;
             }
 
+            @media (max-width: 480px) {
+                padding: 0.4rem;
+            }
+
             .name {
                 font-family: "Integral CF";
                 font-style: normal;
@@ -205,8 +213,8 @@
                 padding: 2rem 1rem;
             }
 
-            @media (max-width: 400px) {
-                padding: 1rem 0.4rem;
+            @media (max-width: 480px) {
+                padding: 0.4rem 0.4rem;
                 gap: 1rem;
             }
 
@@ -229,8 +237,8 @@
                     font-size: 18px;
                 }
 
-                @media (max-width: 400px) {
-                    font-size: 16px;
+                @media (max-width: 480px) {
+                    font-size: 14px;
                 }
             }
         }
