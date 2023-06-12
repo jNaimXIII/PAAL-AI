@@ -6,6 +6,11 @@
         margin-top: 4rem;
         margin-bottom: 4rem;
     }
+
+    @media (max-width: 480px) {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 }
 
 .explore-info {
@@ -35,6 +40,12 @@
     display: flex;
     gap: 1.2rem;
     flex-wrap: wrap;
+
+    margin-top: 4.25rem;
+
+    @media (max-width: 480px) {
+        margin-top: 2rem;
+    }
 }
 
 .explore-card {
@@ -70,5 +81,13 @@
         @media (max-width: 768px) {
             font-size: 1.2rem;
         }
+    }
+}
+
+.explore-actions {
+    margin-top: 4rem;
+
+    @media (max-width: 480px) {
+        margin-top: 2rem;
     }
 }

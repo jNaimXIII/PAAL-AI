@@ -6,11 +6,15 @@
 
     padding: 1rem;
 
-    margin-top: 3rem;
+    // margin-top: 3rem;
     padding-bottom: 6rem;
 
-    @media (max-width: 480px) {
-        margin-top: -3rem;
+    @media (max-width: 768px) {
+        // margin-top: -3rem;
+    }
+
+    @media (max-width: 382px) {
+        // margin-top: 3rem;
     }
 }
 
@@ -45,7 +49,7 @@
         }
 
         @media (max-width: 382px) {
-            position: initial;
+            // position: initial;
         }
     }
 }
@@ -71,6 +75,11 @@
     }
 
     animation: up-and-down 1s ease-in-out infinite alternate;
+
+    @media (max-width: 480px) {
+        top: 2rem;
+        height: 220px;
+    }
 }
 
 .features-gallery {
@@ -236,7 +245,7 @@
     margin-top: 8rem;
 
     @media (max-width: 480px) {
-        font-size: 18px;
-        margin-top: 3rem;
+        font-size: 16px;
+        margin-top: 1rem;
     }
 }

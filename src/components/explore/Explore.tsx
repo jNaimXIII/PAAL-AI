@@ -20,18 +20,13 @@ const Explore: FC = () => {
                 problem-solving.
             </p>
 
-            {/* SPACER */}
-            <div style={{ height: "4.25rem" }} />
-
             <div className="explore-cards">
                 {cardTexts.map((label, index) => (
                     <ExploreCard key={index} label={label} />
                 ))}
             </div>
 
-            <div style={{ height: "5rem" }} />
-
-            <div className="center-items">
+            <div className="center-items explore-actions">
                 <Button label="Explore PAAL" mini />
             </div>
         </section>
