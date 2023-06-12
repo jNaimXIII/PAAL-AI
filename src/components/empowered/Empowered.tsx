@@ -3,6 +3,7 @@ import "./Empowered.scss";
 import { useInView } from "react-intersection-observer";
 
 import EmpoweredImage from "../../assets/empowered/empowered.png";
+import EmpoweredShowcaseImage from "../../assets/empowered/empowered-showcase.png";
 // import BubbleFloat from "../transitions/BubbleFloat";
 import Services from "../services/Services";
 
@@ -14,7 +15,7 @@ const Parallax: FC = () => {
     ];
 
     return (
-        <section className="parallax-container">
+        <section className="empowered-parallax-container">
             {/* <div className="vanta-background" ref={vantaRef} /> */}
             <div
                 className="empowered-background"
@@ -27,6 +28,12 @@ const Parallax: FC = () => {
                         url(${EmpoweredImage})
                     `,
                 }}
+            />
+
+            <img
+                src={EmpoweredShowcaseImage}
+                alt="Empowered Showcase"
+                className="empowered-showcase"
             />
 
             {parallaxTexts.map((text, index) => (
