@@ -1,6 +1,11 @@
 .explore-container {
     margin-top: 8rem;
     margin-bottom: 8rem;
+
+    @media (max-width: 768px) {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
 }
 
 .explore-info {
@@ -19,6 +24,10 @@
 
     @media (max-width: 768px) {
         font-size: 1.2rem;
+    }
+
+    @media (max-width: 512px) {
+        font-size: 0.8rem;
     }
 }
 

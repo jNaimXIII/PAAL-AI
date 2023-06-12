@@ -19,7 +19,7 @@ const Features: FC = () => {
     return (
         <section className="features-container">
             <div className="features-sub-heading">
-                <span>Key</span>
+                <span className="features-sub-heading-initial-word">Key</span>
                 <img
                     src={FeaturesTitleRobotImage}
                     alt="Features Title Robot"
@@ -29,9 +29,6 @@ const Features: FC = () => {
             </div>
 
             <h1 className="features-heading">Features</h1>
-
-            {/* SPACER */}
-            <div style={{ height: "4.4rem" }} />
 
             <div className="features-gallery site-content-container">
                 <div className="feature-cards">
@@ -65,9 +62,6 @@ const Features: FC = () => {
                     ))}
                 </div>
             </div>
-
-            {/* SPACER */}
-            <div style={{ height: "8rem" }} />
 
             <p className="features-info">
                 AI is the broader concept of machines being able to carry out

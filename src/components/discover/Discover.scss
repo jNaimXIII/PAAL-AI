@@ -7,6 +7,14 @@
     margin-top: 8rem;
     padding: 1rem;
     width: 100%;
+
+    @media (max-width: 800px) {
+        padding-bottom: 10rem;
+    }
+
+    @media (max-width: 512px) {
+        padding-bottom: 6rem;
+    }
 }
 
 .discover-sub-heading {
@@ -59,9 +67,9 @@
 
     @media (max-width: 800px) {
         top: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
+        // display: flex;
+        // flex-direction: column;
+        // gap: 2rem;
     }
 
     .discover-graphic {
@@ -77,12 +85,14 @@
         // bottom: 5rem;
         bottom: 10%;
 
-        @media (max-width: 800px) {
-            position: initial;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
+        @media (max-width: 512px) {
+            bottom: 3%;
+
+            // position: initial;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // margin: 0 auto;
         }
     }
 }

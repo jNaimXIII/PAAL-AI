@@ -1,8 +1,13 @@
 .sponsor {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+        gap: 0.4rem;
+    }
 
     &.mobile-sponsor {
         display: flex;
@@ -23,5 +28,9 @@
 
     .sponsor-icon {
         max-width: 100%;
+
+        @media (max-width: 512px) {
+            height: 24px;
+        }
     }
 }

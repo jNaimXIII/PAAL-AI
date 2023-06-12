@@ -8,6 +8,40 @@
         ),
         url("../../assets/hero/hero-background.png") no-repeat center;
     background-size: cover;
+
+    @media (max-width: 425px) {
+        background: linear-gradient(
+                180deg,
+                #000000 13.02%,
+                rgba(0, 0, 0, 0) 43.23%,
+                rgba(0, 0, 0, 0.62) 67.71%,
+                #000000 99.99%,
+                #000000 100%
+            ),
+            url("../../assets/hero/hero-background.png") no-repeat center;
+        background-size: cover;
+    }
+}
+
+.hero-content {
+    @media (max-width: 425px) {
+        min-height: calc(100vh - 8rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.hero-top {
+}
+
+.hero-bottom {
+    @media (max-width: 425px) {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .hero-heading {
@@ -29,11 +63,15 @@
     }
 
     @media (max-width: 425px) {
+        margin-top: 2rem;
+
         // font-size: 88px;
         font-size: 64px;
+        text-align: center;
     }
 
     @media (max-width: 330px) {
+        font-size: 48px;
     }
 }
 
@@ -59,21 +97,32 @@
         line-height: 20px;
         // font-size: 22px;
         // line-height: 24px;
+
+        text-align: center;
     }
 
     @media (max-width: 330px) {
-        // font-size: 18px;
-        // line-height: 20px;
+        font-size: 12px;
     }
 }
 
 .sponsor-row {
     max-width: fit-content;
+
+    @media (max-width: 425px) {
+        margin: 0 auto;
+    }
 }
 
 .hero-actions {
     display: flex;
     align-items: center;
+
+    margin-top: 4rem;
+
+    @media (max-width: 425px) {
+        margin-top: 0;
+    }
 
     @media (max-width: 410px) {
         // justify-content: center;
@@ -82,6 +131,12 @@
 
 .hero-socials {
     max-width: fit-content;
+
+    margin-top: 2rem;
+
+    @media (max-width: 425px) {
+        margin-top: 0;
+    }
 
     @media (max-width: 410px) {
         // margin: 0 auto;
@@ -104,5 +159,10 @@
         margin-top: 7rem;
 
         font-size: 16px;
+    }
+
+    @media (max-width: 425px) {
+        font-size: 12px;
+        color: white;
     }
 }

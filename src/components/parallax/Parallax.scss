@@ -46,7 +46,7 @@
     font-family: "Integral CF";
     font-style: normal;
     font-weight: 400;
-    font-size: 42.5px;
+    font-size: 40px;
     line-height: 139.5%;
     text-transform: capitalize;
     text-align: center;
@@ -70,10 +70,10 @@
     }
 
     @media (max-width: 420px) {
-        font-size: 18px;
+        font-size: 1rem;
     }
 
     @media (max-width: 330px) {
-        font-size: 1rem;
+        font-size: 13px;
     }
 }

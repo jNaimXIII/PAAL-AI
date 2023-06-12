@@ -12,6 +12,10 @@
     @media (max-width: 768px) {
         padding-bottom: 8rem;
     }
+
+    @media (max-width: 425px) {
+        margin-top: 4rem;
+    }
 }
 
 .benefits-heading {
@@ -122,6 +126,10 @@
 
     @media (max-width: 768px) {
         font-size: 20px;
+    }
+
+    @media (max-width: 425px) {
+        font-size: 16px;
     }
 }
 
