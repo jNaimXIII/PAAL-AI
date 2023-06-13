@@ -1,7 +1,9 @@
 .tagline-container {
     padding: 6.25rem 0;
 
-    background: url("../../assets/tagline/tagline-banner.png") no-repeat center;
+    // background: url("../../assets/tagline/tagline-banner.png") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+        url("../../assets/empowered/empowered.png") no-repeat center;
     background-size: cover;
 }
 
