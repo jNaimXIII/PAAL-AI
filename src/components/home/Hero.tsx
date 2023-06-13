@@ -27,7 +27,10 @@ const Hero: FC = () => {
 
                 <div className="hero-bottom">
                     <div className="hero-actions">
-                        <Button label="Start now" />
+                        <Button
+                            label="Get my bot now"
+                            link="https://paal.omp.dev/"
+                        />
                     </div>
 
                     <div className="hero-socials">

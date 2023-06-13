@@ -22,7 +22,7 @@ const Benefits: FC = () => {
     return (
         <section className="benefits-container" id="benefits">
             <h1 className="benefits-heading site-content-container benefits-mobile-hidden">
-                Benefits
+                Setup my bot
             </h1>
 
             <p className="benefits-sub-heading site-content-container benefits-mobile-hidden">
