@@ -8,12 +8,17 @@ import Socials from "./Socials";
 const Footer: FC = () => {
     return (
         <footer className="site-footer site-content-container">
-            <img src={PAALAILogo} alt="PAAL AI" />
+            <img src={PAALAILogo} alt="PAAL AI" className="company-logo" />
 
             <div className="actions">
-                <Button label="Whitepaper" />
+                <Button
+                    label="Whitepaper"
+                    mini
+                    link="https://paalai.io/whitepaper.pdf"
+                    className="footer-whitepaper"
+                />
 
-                <Socials />
+                <Socials small />
             </div>
         </footer>
     );

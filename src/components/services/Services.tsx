@@ -63,9 +63,9 @@ const Services: FC = () => {
                                 <div className="list">
                                     <div className="heading">
                                         <h3 className="name">Hobby Plan</h3>
-                                        <span className="description">
+                                        {/* <span className="description">
                                             For small enterprise
-                                        </span>
+                                        </span> */}
                                     </div>
                                     <div className="items">
                                         {freeServices.map((item, index) => (
@@ -81,9 +81,9 @@ const Services: FC = () => {
                                 <div className="list">
                                     <div className="heading">
                                         <h3 className="name">Pro Plan</h3>
-                                        <span className="description">
+                                        {/* <span className="description">
                                             For small enterprise
-                                        </span>
+                                        </span> */}
                                     </div>
                                     <div className="items">
                                         {premiumServices.map((item, index) => (

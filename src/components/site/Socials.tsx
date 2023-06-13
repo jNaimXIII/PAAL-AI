@@ -13,9 +13,10 @@ import DexToolsIcon from "../../assets/icons/dextools.svg";
 
 type SocialsProps = {
     large?: boolean;
+    small?: boolean;
 };
 
-const Socials: FC<SocialsProps> = ({ large = false }) => {
+const Socials: FC<SocialsProps> = ({ large = false, small = false }) => {
     // const socialLinks = [
     //     {
     //         icon: faFacebook,
@@ -36,7 +37,11 @@ const Socials: FC<SocialsProps> = ({ large = false }) => {
     // ];
 
     return (
-        <div className={`socials ${large ? "large-icons" : ""}`}>
+        <div
+            className={`socials ${large ? "large-icons" : ""} ${
+                small ? "small-icons" : ""
+            }`}
+        >
             {/* {socialLinks.map(({ link, icon }, index) => (
                 <a className="social-link" href={link} key={index} target="_blank">
                     <FontAwesomeIcon icon={icon} />
@@ -48,7 +53,10 @@ const Socials: FC<SocialsProps> = ({ large = false }) => {
                 href={"https://twitter.com/PaalMind"}
                 target="_blank"
             >
-                <FontAwesomeIcon icon={faTwitter} color="#1DA1F2" />
+                <FontAwesomeIcon
+                    icon={faTwitter}
+                    // color="#1DA1F2"
+                />
             </a>
 
             <a
@@ -56,7 +64,10 @@ const Socials: FC<SocialsProps> = ({ large = false }) => {
                 href={"https://t.me/paal_ai"}
                 target="_blank"
             >
-                <FontAwesomeIcon icon={faTelegram} color="#26A5E4" />
+                <FontAwesomeIcon
+                    icon={faTelegram}
+                    // color="#26A5E4"
+                />
             </a>
 
             <a
@@ -64,7 +75,10 @@ const Socials: FC<SocialsProps> = ({ large = false }) => {
                 href={"https://discord.gg/dA6CyjCZ"}
                 target="_blank"
             >
-                <FontAwesomeIcon icon={faDiscord} color="#5865F2" />
+                <FontAwesomeIcon
+                    icon={faDiscord}
+                    // color="#5865F2"
+                />
             </a>
 
             <a

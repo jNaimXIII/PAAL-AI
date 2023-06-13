@@ -33,6 +33,16 @@
         }
     }
 
+    &.small-icons {
+        @media (max-width: 480px) {
+            font-size: 1.2rem;
+
+            img {
+                height: 1.2rem;
+            }
+        }
+    }
+
     .social-link {
         color: white;
     }
