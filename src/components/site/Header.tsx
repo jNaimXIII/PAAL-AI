@@ -10,7 +10,10 @@ const Header: FC = () => {
             <img src={PAALAILogo} alt="PAAL AI Logo" className="company-logo" />
 
             <div className="header-action">
-                <Button label="Whitepaper" />
+                <Button
+                    label="Whitepaper"
+                    link="https://paalai.io/whitepaper.pdf"
+                />
             </div>
         </header>
     );

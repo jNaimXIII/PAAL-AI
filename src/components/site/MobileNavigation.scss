@@ -69,28 +69,72 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
 
     background: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0.9) 0%,
         rgba(0, 0, 0, 0.9) 100%
     );
-}
 
-.mobile-navigation-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .mobile-navigation-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    padding: 0;
+        padding: 0;
 
-    .mobile-navigation-list-item {
-        padding: 0.4rem;
+        .mobile-navigation-list-item {
+            padding: 0.4rem;
 
-        .mobile-navigation-link {
-            color: white;
+            .mobile-navigation-link {
+                color: white;
+                font-family: "Integral CF", sans-serif;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .more-items {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        .more-items-toggle {
+            border: none;
+            background: none;
             font-family: "Integral CF", sans-serif;
-            text-decoration: none;
+            color: #ac2bf9;
+        }
+
+        .more-items-list {
+            padding: 0;
+            flex-direction: column;
+            align-items: center;
+
+            display: flex;
+            // display: none;
+
+            transition: all 0.3s ease-in-out;
+
+            height: 0;
+
+            overflow: hidden;
+
+            &.shown {
+                // display: flex;
+                height: 6rem;
+            }
+
+            .more-item {
+                .more-item-link {
+                    color: white;
+                    font-family: "Integral CF", sans-serif;
+                    text-decoration: none;
+                }
+            }
         }
     }
 }
