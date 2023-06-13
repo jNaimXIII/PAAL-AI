@@ -59,6 +59,11 @@
     margin: 0;
     margin-top: 18rem;
 
+    @media (max-width: 1367px) {
+        margin-top: 6rem;
+        font-size: 100px;
+    }
+
     @media (max-width: 540px) {
         font-size: 100px;
 
@@ -89,6 +94,10 @@
     text-transform: capitalize;
 
     margin: 0;
+
+    @media (max-width: 1367px) {
+        font-size: 26px;
+    }
 
     @media (max-width: 540px) {
         font-size: 26px;
@@ -161,6 +170,10 @@
 
     // margin-top: 12rem;
     margin-top: 8rem;
+
+    @media (max-width: 1367px) {
+        margin-top: 4rem;
+    }
 
     @media (max-width: 768px) {
         margin-top: 7rem;

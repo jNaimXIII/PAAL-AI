@@ -6,8 +6,16 @@
     padding: 1rem 0;
 
     .company-logo {
+        height: 54px;
+
         @media (max-width: 540px) {
             height: 40px;
+        }
+    }
+
+    .header-action {
+        @media (max-width: 625px) {
+            display: none;
         }
     }
 }

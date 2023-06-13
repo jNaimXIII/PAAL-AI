@@ -9,6 +9,10 @@
     padding: 1;
     padding-bottom: 16rem;
 
+    @media (max-width: 1367px) {
+        padding-bottom: 10rem;
+    }
+
     @media (max-width: 768px) {
         padding-bottom: 8rem;
     }
@@ -24,18 +28,19 @@
     font-family: "Monument Extended";
     font-style: normal;
     font-weight: 400;
-    font-size: 64px;
-    line-height: 139.5%;
+    font-size: 44px;
+    // line-height: 139.5%;
     text-align: center;
     text-transform: capitalize;
 
     margin: 0;
 
-    @media (max-width: 1000px) {
-        font-size: 50px;
+    @media (max-width: 1367px) {
+        font-size: 30px;
+        line-height: 0;
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 480px) {
         font-size: 20px;
     }
 }
@@ -46,12 +51,16 @@
     font-family: "Monument Extended";
     font-style: normal;
     font-weight: 800;
-    font-size: 100px;
+    font-size: 70px;
     line-height: 83%;
     text-align: center;
     text-transform: uppercase;
 
     margin: 0;
+
+    @media (max-width: 1367px) {
+        font-size: 44px;
+    }
 
     @media (max-width: 1000px) {
         font-size: 64px;
@@ -70,6 +79,12 @@
     display: flex;
     justify-content: space-between;
     gap: 3.5rem;
+
+    width: 600px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 
     @media (max-width: 768px) {
         gap: 0.4rem;
@@ -90,7 +105,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .benefits-showcase-image {
@@ -123,6 +138,12 @@
     line-height: 139.5%;
     text-align: center;
     text-transform: uppercase;
+
+    @media (max-width: 1367px) {
+        font-size: 18px;
+        line-height: 18px;
+        margin: 0;
+    }
 
     @media (max-width: 768px) {
         font-size: 20px;

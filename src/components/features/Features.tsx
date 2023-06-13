@@ -17,7 +17,7 @@ const Features: FC = () => {
     ];
 
     return (
-        <section className="features-container">
+        <section className="features-container" id="features">
             <div className="features-sub-heading">
                 <span className="features-sub-heading-initial-word">Key</span>
                 <img

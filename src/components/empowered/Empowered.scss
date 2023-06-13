@@ -58,6 +58,10 @@
         text-align: center;
         text-transform: uppercase;
 
+        @media (max-width: 1367px) {
+            font-size: 2rem;
+        }
+
         @media (max-width: 1080px) {
             font-size: 2.6rem;
         }
@@ -73,6 +77,10 @@
         &-mini {
             color: #ac2bf9;
             font-size: 2rem;
+
+            @media (max-width: 1367px) {
+                font-size: 1rem;
+            }
 
             @media (max-width: 1080px) {
                 font-size: 1.8rem;

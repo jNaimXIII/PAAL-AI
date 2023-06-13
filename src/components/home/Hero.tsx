@@ -7,7 +7,7 @@ import Socials from "../site/Socials";
 
 const Hero: FC = () => {
     return (
-        <div className="hero-container">
+        <div className="hero-container" id="home">
             <Header />
 
             {/* SPACER */}

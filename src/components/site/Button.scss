@@ -39,6 +39,10 @@
             border: 1px solid transparent;
         }
 
+        @media (max-width: 1367px) {
+            padding: 0.6rem 1rem;
+        }
+
         @media (max-width: 540px) {
             padding: 0.6rem 1rem;
             font-size: 1rem;

@@ -11,10 +11,13 @@ import Empowered from "../components/empowered/Empowered";
 // import Services from "../components/services/Services";
 import Whitelist from "../components/whitelist/Whitelist";
 import Footer from "../components/site/Footer";
+import MobileNavigation from "../components/site/MobileNavigation";
 
 const Home: FC = () => {
     return (
         <>
+            <MobileNavigation />
+
             <Hero />
 
             <Divider />

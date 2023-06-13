@@ -9,7 +9,9 @@ const Header: FC = () => {
         <header className="site-header site-content-container">
             <img src={PAALAILogo} alt="PAAL AI Logo" className="company-logo" />
 
-            <Button label="Whitepaper" />
+            <div className="header-action">
+                <Button label="Whitepaper" />
+            </div>
         </header>
     );
 };

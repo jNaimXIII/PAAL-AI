@@ -20,7 +20,7 @@ const Benefits: FC = () => {
     ];
 
     return (
-        <section className="benefits-container">
+        <section className="benefits-container" id="benefits">
             <h1 className="benefits-heading site-content-container benefits-mobile-hidden">
                 Benefits
             </h1>

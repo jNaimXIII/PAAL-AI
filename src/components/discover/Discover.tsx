@@ -10,7 +10,7 @@ const Discover: FC = () => {
     return (
         <>
             <Divider />
-            <section className="discover-container">
+            <section className="discover-container" id="discover">
                 <span className="discover-sub-heading">Discover</span>
                 <h1 className="discover-heading">
                     The power of AI & machine learning

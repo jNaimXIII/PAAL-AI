@@ -18,7 +18,7 @@ const Services: FC = () => {
     return (
         <>
             <Divider />
-            <section className="services-wrapper">
+            <section className="services-wrapper" id="tokenomics">
                 <div className="services-container site-content-container">
                     <div className="services-col-left ">
                         <h1 className="services-heading">

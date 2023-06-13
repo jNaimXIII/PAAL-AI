@@ -23,19 +23,15 @@
     font-family: "Monument Extended";
     font-style: normal;
     font-weight: 800;
-    font-size: 100px;
+    font-size: 70px;
     line-height: 83%;
     text-align: center;
     text-transform: uppercase;
 
     margin: 0;
 
-    @media (max-width: 768px) {
-        font-size: 60px;
-    }
-
-    @media (max-width: 440px) {
-        font-size: 40px;
+    @media (max-width: 1367px) {
+        font-size: 36px;
     }
 }
 
@@ -60,7 +56,7 @@
 
 .features-heading-image {
     display: inline-block;
-    max-width: 100%;
+    max-width: 200px;
     position: relative;
     z-index: -1;
     top: 4rem;
@@ -76,6 +72,11 @@
 
     animation: up-and-down 1s ease-in-out infinite alternate;
 
+    @media (max-width: 1367px) {
+        width: 100px;
+        top: 2rem;
+    }
+
     @media (max-width: 480px) {
         top: 2rem;
         height: 220px;
@@ -85,12 +86,19 @@
 .features-gallery {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 
-    margin-top: 4.4rem;
+    margin-top: 2.4rem;
+
+    @media (max-width: 1367px) {
+        gap: 1rem;
+        margin-top: 0;
+        max-width: 700px !important;
+    }
 
     @media (max-width: 1000px) {
         flex-direction: column;
+        width: 100%;
     }
 
     @media (max-width: 768px) {
@@ -112,7 +120,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1rem;
+
+    @media (max-width: 1367px) {
+        gap: 1rem;
+    }
 
     @media (max-width: 1000px) {
         order: 2;
@@ -126,6 +138,10 @@
 .feature-card {
     flex: 1;
     padding: 1.6rem 2.4rem;
+
+    @media (max-width: 1367px) {
+        padding: 0.5rem;
+    }
 
     @media (max-width: 768px) {
         padding: 1.2rem 2rem;
@@ -152,13 +168,17 @@
         font-family: "Integral CF";
         font-style: normal;
         font-weight: 700;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         line-height: 104%;
         text-transform: uppercase;
         text-align: center;
 
+        @media (max-width: 1367px) {
+            font-size: 16px;
+        }
+
         @media (max-width: 768px) {
-            font-size: 1.2rem;
+            font-size: 14px;
         }
     }
 }
@@ -167,6 +187,8 @@
     position: relative;
     flex: 2.5;
     margin: 0 auto;
+
+    // width: 80%;
 
     @media (max-width: 1000px) {
         // order: 1;
@@ -182,6 +204,10 @@
         bottom: 2rem;
         // width: 100%;
         width: fit-content;
+
+        @media (max-width: 1367px) {
+            bottom: 1rem;
+        }
 
         .feature-image-content {
             // width: fit-content;
@@ -199,6 +225,10 @@
                 line-height: 98%;
                 text-transform: uppercase;
 
+                @media (max-width: 1367px) {
+                    font-size: 1.5rem;
+                }
+
                 @media (max-width: 440px) {
                     font-size: 1rem;
                 }
@@ -214,6 +244,10 @@
                 font-size: 3.25rem;
                 line-height: 98%;
                 text-transform: uppercase;
+
+                @media (max-width: 1367px) {
+                    font-size: 3rem;
+                }
 
                 @media (max-width: 768px) {
                     font-size: 2.5rem;
@@ -242,10 +276,10 @@
     max-width: 76ch;
     margin: 0 auto;
 
-    margin-top: 8rem;
+    margin-top: 2rem;
 
-    @media (max-width: 480px) {
+    @media (max-width: 1367px) {
+        margin-top: 0;
         font-size: 14px;
-        margin-top: 1rem;
     }
 }
