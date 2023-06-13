@@ -7,13 +7,19 @@ import Divider from "../site/Divider";
 
 const Services: FC = () => {
     const freeServices = [
-        "AI bot",
-        "One user",
-        "Custom dataset",
-        "Multi-platform integration",
+        "Custom Dataset",
+        "Single Platform",
+        "Five Datasets",
+        "Document Limit",
     ];
 
-    const premiumServices = [...freeServices, "Unlimited data storage"];
+    const premiumServices = [
+        "Hobby Features",
+        "Unlimited Dataset",
+        "Custom Personality",
+        "Data Storage",
+        "Multi-platform",
+    ];
 
     return (
         <>
@@ -56,7 +62,7 @@ const Services: FC = () => {
                             <div className="list-wrapper">
                                 <div className="list">
                                     <div className="heading">
-                                        <h3 className="name">Free model</h3>
+                                        <h3 className="name">Hobby Plan</h3>
                                         <span className="description">
                                             For small enterprise
                                         </span>
@@ -74,7 +80,7 @@ const Services: FC = () => {
                             <div className="list-wrapper list-wrapper-alt">
                                 <div className="list">
                                     <div className="heading">
-                                        <h3 className="name">Premium</h3>
+                                        <h3 className="name">Pro Plan</h3>
                                         <span className="description">
                                             For small enterprise
                                         </span>

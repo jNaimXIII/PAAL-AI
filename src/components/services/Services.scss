@@ -96,7 +96,6 @@
 
     .list-wrapper {
         flex: 1;
-        display: flex;
 
         padding: 4px;
         border-radius: 10.0214px;
@@ -144,6 +143,8 @@
         display: flex;
         flex-direction: column;
         background: black;
+
+        height: 100%;
 
         border-radius: 10.0214px;
         // border: 1px solid #ffffffaa;

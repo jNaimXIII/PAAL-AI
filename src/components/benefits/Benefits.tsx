@@ -1,23 +1,23 @@
 import { FC } from "react";
 import "./Benefits.scss";
 
-import BenefitsShowcaseRobotImage from "../../assets/benefits/benefits-robot.png";
-import BenefitsShowcaseItemOneImage from "../../assets/benefits/benefits-showcase-1.png";
-import BenefitsShowcaseItemTwoImage from "../../assets/benefits/benefits-showcase-2.png";
-import BenefitsShowcaseItemThreeImage from "../../assets/benefits/benefits-showcase-3.png";
-import BenefitsShowcaseItemFourImage from "../../assets/benefits/benefits-showcase-4.png";
+// import BenefitsShowcaseRobotImage from "../../assets/benefits/benefits-robot.png";
+// import BenefitsShowcaseItemOneImage from "../../assets/benefits/benefits-showcase-1.png";
+// import BenefitsShowcaseItemTwoImage from "../../assets/benefits/benefits-showcase-2.png";
+// import BenefitsShowcaseItemThreeImage from "../../assets/benefits/benefits-showcase-3.png";
+// import BenefitsShowcaseItemFourImage from "../../assets/benefits/benefits-showcase-4.png";
 import Stats from "../stats/Stats";
 
 const Benefits: FC = () => {
-    const benefitsShowcaseItemsRowOne = [
-        BenefitsShowcaseItemOneImage,
-        BenefitsShowcaseItemTwoImage,
-    ];
+    // const benefitsShowcaseItemsRowOne = [
+    //     BenefitsShowcaseItemOneImage,
+    //     BenefitsShowcaseItemTwoImage,
+    // ];
 
-    const benefitsShowcaseItemsRowTwo = [
-        BenefitsShowcaseItemThreeImage,
-        BenefitsShowcaseItemFourImage,
-    ];
+    // const benefitsShowcaseItemsRowTwo = [
+    //     BenefitsShowcaseItemThreeImage,
+    //     BenefitsShowcaseItemFourImage,
+    // ];
 
     return (
         <section className="benefits-container" id="benefits">
@@ -30,7 +30,7 @@ const Benefits: FC = () => {
                 solution
             </p>
 
-            <div className="benefits-gallery site-content-container benefits-mobile-hidden">
+            {/* <div className="benefits-gallery site-content-container benefits-mobile-hidden">
                 <div className="benefits-showcase-row">
                     {benefitsShowcaseItemsRowOne.map((item, index) => (
                         <BenefitsShowcaseItem
@@ -56,7 +56,21 @@ const Benefits: FC = () => {
                         />
                     ))}
                 </div>
-            </div>
+            </div> */}
+
+            {/* <div className="benefits-video">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube-nocookie.com/embed/xn28hJGrBfo?controls=0"
+                    title="AI Video"
+                    // frameBorder={0}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                ></iframe>
+            </div> */}
+
+            <div className="benefits-video"></div>
 
             {/* SPACER */}
             {/* <div style={{ height: "7.5rem" }} /> */}
@@ -74,22 +88,22 @@ const Benefits: FC = () => {
 
 export default Benefits;
 
-type BenefitsShowcaseItemProps = {
-    background: string;
-    mobileHidden: boolean;
-};
+// type BenefitsShowcaseItemProps = {
+//     background: string;
+//     mobileHidden: boolean;
+// };
 
-const BenefitsShowcaseItem: FC<BenefitsShowcaseItemProps> = ({
-    background,
-    mobileHidden,
-}) => {
-    return (
-        <img
-            src={background}
-            alt=""
-            className={`${
-                mobileHidden ? "mobile-hidden-item" : ""
-            } benefits-showcase-item`}
-        />
-    );
-};
+// const BenefitsShowcaseItem: FC<BenefitsShowcaseItemProps> = ({
+//     background,
+//     mobileHidden,
+// }) => {
+//     return (
+//         <img
+//             src={background}
+//             alt=""
+//             className={`${
+//                 mobileHidden ? "mobile-hidden-item" : ""
+//             } benefits-showcase-item`}
+//         />
+//     );
+// };

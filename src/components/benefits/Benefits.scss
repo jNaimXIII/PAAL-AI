@@ -51,7 +51,7 @@
     font-family: "Monument Extended";
     font-style: normal;
     font-weight: 800;
-    font-size: 70px;
+    font-size: 54px;
     line-height: 83%;
     text-align: center;
     text-transform: uppercase;
@@ -59,11 +59,8 @@
     margin: 0;
 
     @media (max-width: 1367px) {
-        font-size: 44px;
-    }
-
-    @media (max-width: 1000px) {
-        font-size: 64px;
+        font-size: 34px;
+        max-width: 26ch !important;
     }
 
     @media (max-width: 768px) {
@@ -73,6 +70,21 @@
     @media (max-width: 400px) {
         font-size: 26px;
     }
+}
+
+// .benefits-video {
+//     margin: 0 auto;
+//     display: flex;
+//     justify-content: center;
+
+//     iframe {
+//         border: none;
+//     }
+// }
+
+.benefits-video {
+    height: 50vh;
+    background: gray;
 }
 
 .benefits-gallery {
@@ -134,23 +146,17 @@
     font-family: "Integral CF";
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 139.5%;
     text-align: center;
     text-transform: uppercase;
 
+    max-width: 60ch !important;
+
     @media (max-width: 1367px) {
-        font-size: 18px;
+        font-size: 14px;
         line-height: 18px;
         margin: 0;
-    }
-
-    @media (max-width: 768px) {
-        font-size: 20px;
-    }
-
-    @media (max-width: 480px) {
-        font-size: 14px;
     }
 }
 
