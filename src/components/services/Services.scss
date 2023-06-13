@@ -26,6 +26,12 @@
 .services-col-left,
 .services-col-right {
     padding-top: 4rem;
+
+    @media (max-width: 480px) {
+        padding-top: 0;
+
+        margin-bottom: 2.2rem;
+    }
 }
 
 .services-col-left {
@@ -99,6 +105,10 @@
 
         padding: 4px;
         border-radius: 10.0214px;
+
+        @media (max-width: 480px) {
+            padding: 1.5px;
+        }
 
         @keyframes GradientBorder {
             0% {
@@ -235,6 +245,7 @@
 
             @media (max-width: 335px) {
                 gap: 0.6rem;
+                padding-bottom: 1rem;
             }
 
             .item {
