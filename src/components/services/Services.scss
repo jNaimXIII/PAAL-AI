@@ -188,6 +188,10 @@
                 @media (max-width: 400px) {
                     font-size: 18px;
                 }
+
+                @media (max-width: 335px) {
+                    font-size: 15px;
+                }
             }
             .description {
                 display: block;
@@ -229,6 +233,10 @@
                 gap: 1rem;
             }
 
+            @media (max-width: 335px) {
+                gap: 0.6rem;
+            }
+
             .item {
                 color: #ffffff;
 
@@ -246,6 +254,10 @@
 
                 @media (max-width: 480px) {
                     font-size: 10px;
+                }
+
+                @media (max-width: 335px) {
+                    font-size: 8px;
                 }
             }
         }

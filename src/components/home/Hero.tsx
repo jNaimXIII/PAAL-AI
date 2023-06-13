@@ -16,9 +16,7 @@ const Hero: FC = () => {
             <section className="hero-content site-content-container">
                 <div className="hero-top">
                     <h1 className="hero-heading">PAAL AI</h1>
-                    <p className="hero-sub-heading">
-                        With multi platform support
-                    </p>
+                    <p className="hero-sub-heading">Voice to Your Web Data</p>
 
                     <div className="sponsor-row">
                         <Sponsor />

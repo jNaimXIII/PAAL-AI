@@ -41,6 +41,9 @@
     @media (max-width: 480px) {
         font-size: 26px;
     }
+
+    position: relative;
+    z-index: 2;
 }
 
 .discover-heading {
@@ -68,6 +71,9 @@
     @media (max-width: 500px) {
         font-size: 40px;
     }
+
+    position: relative;
+    z-index: 2;
 }
 
 .discover-graphic-container {
@@ -93,7 +99,7 @@
         display: block;
 
         position: relative;
-        z-index: -1;
+        // z-index: -1;
     }
 
     .sponsor-container {

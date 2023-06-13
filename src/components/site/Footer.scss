@@ -12,6 +12,7 @@
     .company-logo {
         @media (max-width: 768px) {
             height: 2rem;
+            display: none;
         }
     }
 
@@ -23,6 +24,7 @@
         @media (max-width: 480px) {
             flex-direction: row;
             align-items: center;
+            margin: 0 auto;
 
             .footer-whitepaper {
                 display: none;

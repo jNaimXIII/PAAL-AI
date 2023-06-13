@@ -11,6 +11,7 @@ const Services: FC = () => {
         "Single Platform",
         "Five Datasets",
         "Document Limit",
+        "Customer Support",
     ];
 
     const premiumServices = [
@@ -96,10 +97,10 @@ const Services: FC = () => {
                             </div>
                         </div>
 
-                        <div className="service-titles">
+                        {/* <div className="service-titles">
                             <span className="title">Free</span>
                             <span className="title">Custom Price</span>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
