@@ -3,7 +3,7 @@ import "./Whitelist.scss";
 
 const Whitelist: FC = () => {
     return (
-        <section className="whitelist-section" id="#whitelist">
+        <section className="whitelist-section" id="whitelist">
             <div className="content site-content-container">
                 <div className="info">
                     <h3>Submit your wallet for whitelist</h3>

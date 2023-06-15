@@ -18,7 +18,7 @@ const MobileNavigation: FC = () => {
             url: "#features",
         },
         {
-            label: "Benefits",
+            label: "Video Tutorial",
             url: "#benefits",
         },
         {
@@ -26,7 +26,7 @@ const MobileNavigation: FC = () => {
             url: "#tokenomics",
         },
         {
-            label: "Whitelist",
+            label: "Contact",
             url: "#whitelist",
         },
     ];
@@ -104,7 +104,7 @@ const MobileNavigation: FC = () => {
 
                 <div className="more-items">
                     <button className="more-items-toggle" onClick={toggleDocs}>
-                        Docs
+                        Docs {!isDocsShown ? "+" : "-"}
                     </button>
                     <ul
                         className={`more-items-list ${
