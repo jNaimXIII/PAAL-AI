@@ -58,19 +58,18 @@ const Benefits: FC = () => {
                 </div>
             </div> */}
 
-            {/* <div className="benefits-video">
-                <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube-nocookie.com/embed/xn28hJGrBfo?controls=0"
-                    title="AI Video"
-                    // frameBorder={0}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                ></iframe>
-            </div> */}
+            <iframe
+                className="benefits-video site-content-container"
+                width="560"
+                height="315"
+                src="https://www.youtube-nocookie.com/embed/7H_DmlVMqdU?controls=0"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+            ></iframe>
 
-            <div className="benefits-video"></div>
+            {/* <div className="benefits-video"></div> */}
 
             {/* SPACER */}
             {/* <div style={{ height: "7.5rem" }} /> */}

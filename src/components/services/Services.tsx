@@ -16,7 +16,7 @@ const Services: FC = () => {
 
     const premiumServices = [
         "Hobby Features",
-        "Unlimited Dataset",
+        "Unlimited Documents",
         "Custom Personality",
         "Data Storage",
         "Multi-platform",
