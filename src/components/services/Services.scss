@@ -195,11 +195,7 @@
                     font-size: 26px;
                 }
 
-                @media (max-width: 400px) {
-                    font-size: 18px;
-                }
-
-                @media (max-width: 335px) {
+                @media (max-width: 480px) {
                     font-size: 15px;
                 }
             }
