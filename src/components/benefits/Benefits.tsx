@@ -62,11 +62,11 @@ const Benefits: FC = () => {
                 className="benefits-video site-content-container"
                 width="560"
                 height="315"
-                src="https://www.youtube-nocookie.com/embed/7H_DmlVMqdU?controls=0"
+                src="https://www.youtube-nocookie.com/embed/7H_DmlVMqdU"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
+                allowFullScreen={true}
             ></iframe>
 
             {/* <div className="benefits-video"></div> */}
