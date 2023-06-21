@@ -2,7 +2,7 @@ import { FC } from "react";
 import "./Footer.scss";
 
 import PAALAILogo from "../../assets/site/paal-ai-logo.png";
-import Button from "./Button";
+// import Button from "./Button";
 import Socials from "./Socials";
 
 const Footer: FC = () => {
