@@ -11,7 +11,10 @@ const Explore: FC = () => {
     ];
 
     return (
-        <section className="explore-container site-content-container">
+        <section
+            className="explore-container site-content-container"
+            id="stake"
+        >
             <p className="explore-info">
                 PAAL is an advanced chatbot built on AI and ML technologies,
                 designed to streamline tasks that typically require human
@@ -26,7 +29,7 @@ const Explore: FC = () => {
             </div>
 
             <div className="center-items explore-actions">
-                <Button label="Explore PAAL" mini />
+                <Button label="Stake" mini link="https://google.com" />
             </div>
         </section>
     );

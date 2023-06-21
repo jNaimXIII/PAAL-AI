@@ -14,6 +14,10 @@ const MobileNavigation: FC = () => {
             url: "#discover",
         },
         {
+            label: "Stake",
+            url: "#stake",
+        },
+        {
             label: "Features",
             url: "#features",
         },

@@ -10,7 +10,8 @@ const Footer: FC = () => {
         <footer className="site-footer site-content-container">
             <img src={PAALAILogo} alt="PAAL AI" className="company-logo" />
 
-            <div className="actions">
+            <Socials small />
+            {/* <div className="actions">
                 <Button
                     label="Whitepaper"
                     mini
@@ -18,8 +19,7 @@ const Footer: FC = () => {
                     className="footer-whitepaper"
                 />
 
-                <Socials small />
-            </div>
+            </div> */}
         </footer>
     );
 };

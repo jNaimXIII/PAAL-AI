@@ -10,7 +10,7 @@ type SponsorProps = {
 const Sponsor: FC<SponsorProps> = ({ mobileCenter }) => {
     return (
         <div className={`sponsor ${mobileCenter ? "mobile-sponsor" : ""}`}>
-            <span className="sponsor-title">In partnership with</span>
+            <span className="sponsor-title">Supported by</span>
             <img
                 className="sponsor-icon"
                 src={GoogleCloudLogo}
