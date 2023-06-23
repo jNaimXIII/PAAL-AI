@@ -83,7 +83,9 @@ const Socials: FC<SocialsProps> = ({ large = false, small = false }) => {
 
             <a
                 className="social-link"
-                href={"https://dextools.io/"}
+                href={
+                    "https://www.dextools.io/app/ether/pair-explorer/0x58bd02eb1061155defcbb9ffa541a16ec6942b79"
+                }
                 target="_blank"
             >
                 <img src={DexToolsIcon} />

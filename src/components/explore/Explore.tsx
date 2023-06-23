@@ -29,7 +29,7 @@ const Explore: FC = () => {
             </div>
 
             <div className="center-items explore-actions">
-                <Button label="Stake" mini link="https://google.com" />
+                <Button label="Stake" mini link="https://staking.paalai.io/" />
             </div>
         </section>
     );
