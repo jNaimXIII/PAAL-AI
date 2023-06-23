@@ -27,111 +27,42 @@
             gap: 0.4rem;
         }
 
-        .info {
-            flex: 1;
+        h3 {
+            color: white;
 
-            h3 {
-                color: white;
+            font-family: "Integral CF";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 151%;
 
-                font-family: "Integral CF";
-                font-style: normal;
-                font-weight: 600;
-                font-size: 32px;
-                line-height: 151%;
+            text-transform: uppercase;
 
-                text-transform: uppercase;
+            max-width: 25ch;
 
-                max-width: 25ch;
-
-                @media (max-width: 768px) {
-                    font-size: 24px;
-                }
-
-                @media (max-width: 480px) {
-                    font-size: 18px;
-                    text-align: center;
-                    margin: 0;
-                }
+            @media (max-width: 768px) {
+                font-size: 24px;
             }
 
-            p {
-                color: #ffffff;
-
-                font-family: "Integral CF";
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 151%;
-
-                text-transform: capitalize;
-
-                @media (max-width: 480px) {
-                    font-size: 8px;
-                    text-align: center;
-                }
+            @media (max-width: 480px) {
+                font-size: 18px;
+                text-align: center;
+                margin: 0;
             }
         }
 
-        .inputs {
-            flex: 1;
-            gap: 0.4rem;
+        a {
+            color: #ffffff;
 
-            display: flex;
-            justify-content: flex-end;
+            font-family: "Integral CF";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 151%;
 
-            padding: 0.5rem 0.8rem;
-
-            background: #000000;
-            border-radius: 10.0214px;
-
-            @media (max-width: 520px) {
-                justify-content: center;
-                padding: 0.2rem;
-
-                width: 100%;
-            }
-
-            input {
-                color: white;
-                font-family: "Integral CF";
-
-                flex: 1;
-                max-width: 700px;
-                background: none;
-                border: none;
-
-                @media (max-width: 520px) {
-                    font-size: 12px;
-                }
-
-                &::placeholder {
-                    opacity: 0.6;
-                }
-            }
-
-            button {
-                color: #ffffff;
-
-                background: #ac2bf9;
-                border-radius: 10.0214px;
-                padding: 0.8rem 2.75rem;
-
-                border: none;
-
-                @media (max-width: 768px) {
-                    padding: 0.4rem 0.6rem;
-                }
-
-                @media (max-width: 520px) {
-                    font-size: 12px;
-                }
-
-                font-family: "Integral CF";
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 151%;
-                text-transform: capitalize;
+            @media (max-width: 480px) {
+                font-size: 8px;
+                text-align: center;
             }
         }
     }

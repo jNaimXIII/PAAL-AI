@@ -5,15 +5,9 @@ const Whitelist: FC = () => {
     return (
         <section className="whitelist-section" id="whitelist">
             <div className="content site-content-container">
-                <div className="info">
-                    <h3>Submit your wallet for whitelist</h3>
-                    <p>Register your wallet to be whitelisted for our launch</p>
-                </div>
+                <h3>Contact Us</h3>
 
-                <form className="inputs">
-                    <input type="text" placeholder="Address" />
-                    <button>Submit</button>
-                </form>
+                <a href="mailto:admin@paalai.io">admin@paalai.io</a>
             </div>
         </section>
     );

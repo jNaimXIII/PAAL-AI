@@ -161,12 +161,14 @@
 .wallet-address {
     color: #ac2bf9;
 
+    display: block;
     font-family: "Monument Extended";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 43px;
     text-transform: capitalize;
+    text-decoration: none;
 
     // margin-top: 12rem;
     margin-top: 8rem;
@@ -178,13 +180,14 @@
     @media (max-width: 768px) {
         margin-top: 7rem;
 
-        font-size: 16px;
+        font-size: 2.4vw;
+        // font-size: 16px;
     }
 
     @media (max-width: 480px) {
         margin-top: 0;
 
-        font-size: 12px;
+        // font-size: 12px;
         color: white;
     }
 }

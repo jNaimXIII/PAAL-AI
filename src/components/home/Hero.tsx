@@ -35,7 +35,13 @@ const Hero: FC = () => {
                         <Socials large />
                     </div>
 
-                    <div className="wallet-address">0x00000000000</div>
+                    <a
+                        href="https://etherscan.io/token/0x6f3c0d29e27bd76b45063ec6f4641f07f260ae5a"
+                        target="_blank"
+                        className="wallet-address"
+                    >
+                        0x6f3c0D29e27BD76b45063EC6F4641F07F260AE5A
+                    </a>
                 </div>
             </section>
         </div>
