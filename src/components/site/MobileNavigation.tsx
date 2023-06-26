@@ -62,7 +62,7 @@ const MobileNavigation: FC = () => {
     const docsLinks = [
         {
             label: "Whitepaper",
-            link: "https://paalai.io/whitepaper.pdf",
+            link: "/whitepaper.pdf",
         },
         {
             label: "GitBook",
