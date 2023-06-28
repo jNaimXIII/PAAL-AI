@@ -34,8 +34,8 @@ const Services: FC = () => {
 
                         <p className="services-info">
                             PAAL AI, a token on Ethereum, incentivizes holders
-                            with profit sharing and token buybacks to drive
-                            token demand and price.
+                            with reward and token buybacks to drive token demand
+                            and price.
                         </p>
 
                         <p className="services-info">
