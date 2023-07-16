@@ -38,9 +38,11 @@ const Socials: FC<SocialsProps> = ({ large = false, small = false }) => {
 
     return (
         <div
-            className={`socials ${large ? "large-icons" : ""} ${
-                small ? "small-icons" : ""
-            }`}
+            className={`
+                socials
+                ${large ? "large-icons" : ""}
+                ${small ? "small-icons" : ""}
+            `}
         >
             {/* {socialLinks.map(({ link, icon }, index) => (
                 <a className="social-link" href={link} key={index} target="_blank">
@@ -72,7 +74,7 @@ const Socials: FC<SocialsProps> = ({ large = false, small = false }) => {
 
             <a
                 className="social-link"
-                href={"https://discord.gg/dA6CyjCZ"}
+                href={"https://discord.gg/paalai"}
                 target="_blank"
             >
                 <FontAwesomeIcon
