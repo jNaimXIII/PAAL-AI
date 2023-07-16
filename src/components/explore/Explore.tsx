@@ -16,10 +16,10 @@ const Explore: FC = () => {
             id="stake"
         >
             <p className="explore-info">
-                PAAL is an advanced chatbot built on AI and ML technologies,
-                designed to streamline tasks that typically require human
-                intellect, such as natural language understanding, image
-                recognition, decision-making, and problem-solving.
+                PAAL is a robust AI ecosystem leveraging advanced AI and ML
+                technologies. It enables users to create personalized AI, deploy
+                it across multiple platforms including Telegram and Discord, and
+                offers comprehensive AI solutions for businesses and projects
             </p>
 
             <div className="explore-cards">
@@ -29,7 +29,11 @@ const Explore: FC = () => {
             </div>
 
             <div className="center-items explore-actions">
-                <Button label="Stake" mini link="https://staking.paalai.io/" />
+                <Button
+                    label="Stake Now"
+                    mini
+                    link="https://staking.paalai.io/"
+                />
             </div>
         </section>
     );

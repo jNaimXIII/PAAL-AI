@@ -6,14 +6,32 @@ import FeaturesTitleRobotImage from "../../assets/features/features-title-bot.pn
 
 const Features: FC = () => {
     const featuresGroupOne = [
-        "Personalized chatbot",
-        "Multiple platforms",
-        "Custom data set",
+        {
+            label: "Personalized chatbot",
+            link: "https://docs.paalai.io/usage/tg-bot-setup",
+        },
+        {
+            label: "Multiple platforms",
+            link: "https://docs.paalai.io/features/product",
+        },
+        {
+            label: "Custom data set",
+            link: "https://docs.paalai.io/usage/dataset",
+        },
     ];
     const featuresGroupTwo = [
-        "Multimodal AI",
-        "AI as a service",
-        "LLM for crypto",
+        {
+            label: "Multimodal AI",
+            link: "https://docs.paalai.io/features/product/summarize",
+        },
+        {
+            label: "AI as a service",
+            link: "https://docs.paalai.io/collaborating/how-we-work-together",
+        },
+        {
+            label: "LLM for crypto",
+            link: "https://docs.paalai.io/features/llm-for-crypto",
+        },
     ];
 
     return (
@@ -32,33 +50,35 @@ const Features: FC = () => {
 
             <div className="features-gallery site-content-container">
                 <div className="feature-cards">
-                    {featuresGroupOne.map((label, index) => (
-                        <FeatureCard key={index} label={label} />
+                    {featuresGroupOne.map(({ label, link }, index) => (
+                        <FeatureCard key={index} label={label} link={link} />
                     ))}
                 </div>
 
                 <div className="feature-image-container">
-                    <img
-                        src={FeaturesRobotImage}
-                        alt="Features Robot"
-                        className="feature-image"
-                    />
+                    <div style={{ position: "relative" }}>
+                        <img
+                            src={FeaturesRobotImage}
+                            alt="Features Robot"
+                            className="feature-image"
+                        />
 
-                    <div className="feature-image-content-wrapper">
-                        <div className="feature-image-content">
-                            <span className="feature-image-content-sub-heading">
-                                Let's
-                            </span>
-                            <span className="feature-image-content-heading">
-                                Get started
-                            </span>
+                        <div className="feature-image-content-wrapper">
+                            <div className="feature-image-content">
+                                <span className="feature-image-content-sub-heading">
+                                    Let's
+                                </span>
+                                <span className="feature-image-content-heading">
+                                    Get started
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div className="feature-cards">
-                    {featuresGroupTwo.map((label, index) => (
-                        <FeatureCard key={index} label={label} />
+                    {featuresGroupTwo.map(({ label, link }, index) => (
+                        <FeatureCard key={index} label={label} link={link} />
                     ))}
                 </div>
             </div>
@@ -73,12 +93,12 @@ const Features: FC = () => {
 
 export default Features;
 
-type FeatureCardProps = { label: string };
+type FeatureCardProps = { label: string; link: string };
 
-const FeatureCard: FC<FeatureCardProps> = ({ label }) => {
+const FeatureCard: FC<FeatureCardProps> = ({ label, link }) => {
     return (
-        <div className="feature-card">
+        <a href={link} target="_blank" className="feature-card">
             <span className="feature-card-label">{label}</span>
-        </div>
+        </a>
     );
 };

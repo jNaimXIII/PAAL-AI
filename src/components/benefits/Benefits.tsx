@@ -25,10 +25,10 @@ const Benefits: FC = () => {
                 Setup my bot
             </h1>
 
-            <p className="benefits-sub-heading site-content-container benefits-mobile-hidden">
-                the benefits of PAAL, our personalized AI and ML chatbot
-                solution
-            </p>
+            {/*<p className="benefits-sub-heading site-content-container benefits-mobile-hidden">*/}
+            {/*    the benefits of PAAL, our personalized AI and ML chatbot*/}
+            {/*    solution*/}
+            {/*</p>*/}
 
             {/* <div className="benefits-gallery site-content-container benefits-mobile-hidden">
                 <div className="benefits-showcase-row">

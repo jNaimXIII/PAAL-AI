@@ -30,7 +30,7 @@
             display: block;
 
             color: white;
-            font-size: 1rem;
+            font-size: 2rem;
 
             padding: 0.2rem 0.5rem;
 
@@ -43,6 +43,10 @@
                 rgba(172, 43, 249) 165.02%
             );
             border-radius: 5.26316px;
+
+            @media (max-width: 1024px) {
+                font-size: 1.2rem;
+            }
 
             &.open {
                 color: #ac2bf9;

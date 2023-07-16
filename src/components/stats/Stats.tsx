@@ -5,14 +5,14 @@ import { useInView } from "react-intersection-observer";
 const Stats: FC = () => {
     const statItems = [
         {
-            number: 20,
+            number: 30,
             sign: "+",
             label: "Active projects",
         },
         {
-            number: 400,
+            number: 2500,
             sign: "+",
-            label: "Daily messages",
+            label: "Users",
         },
         {
             number: 500,
