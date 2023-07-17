@@ -12,6 +12,7 @@ import Services from "../components/services/Services";
 import Whitelist from "../components/whitelist/Whitelist";
 import Footer from "../components/site/Footer";
 import MobileNavigation from "../components/site/MobileNavigation";
+import Tools from "../components/tools/Tools.tsx";
 
 const Home: FC = () => {
     return (
@@ -28,6 +29,9 @@ const Home: FC = () => {
             {/* <Discover /> */}
 
             <Explore />
+            <Divider />
+
+            <Tools />
 
             <Divider />
             <Tagline />

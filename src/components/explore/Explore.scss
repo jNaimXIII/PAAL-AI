@@ -93,3 +93,23 @@
         margin-top: 2rem;
     }
 }
+
+.explore-heading {
+    color: #a12aeb;
+    font-family: "Monument Extended", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+
+    margin: 3.2rem 0;
+}
+
+.explore-list {
+    color: white;
+    font-family: "Integral CF", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

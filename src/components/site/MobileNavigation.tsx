@@ -76,15 +76,19 @@ const MobileNavigation: FC = () => {
 
     return (
         <>
-            <button className="mobile-navigation-toggle">
+            <button
+                className="mobile-navigation-toggle"
+                onClick={toggleMobileNavigation}
+            >
                 <div className="mobile-navigation-toggle-icon-wrapper">
                     <FontAwesomeIcon
                         className={`mobile-navigation-toggle-icon ${
                             isNavigationOn ? "open" : ""
                         }`}
                         icon={faBars}
-                        onClick={toggleMobileNavigation}
                     />
+
+                    <span>Menu</span>
                 </div>
             </button>
 

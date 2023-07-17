@@ -3,11 +3,18 @@ import "./Explore.scss";
 import Button from "../site/Button";
 
 const Explore: FC = () => {
-    const cardTexts = [
-        "Advanced AI and machine learning",
-        "Multi-platform integration",
-        "Custom dataset training",
-        "Adaptable and Evolving",
+    // const cardTexts = [
+    //     "Advanced AI and machine learning",
+    //     "Multi-platform integration",
+    //     "Custom dataset training",
+    //     "Adaptable and Evolving",
+    // ];
+
+    const listTexts = [
+        "1% of all $PAAL trading volume.",
+        "AI tools subscription + Ads/Development revenue sharing.",
+        "25% referral rewards.",
+        "Partner projects Airdrops.",
     ];
 
     return (
@@ -22,11 +29,21 @@ const Explore: FC = () => {
                 offers comprehensive AI solutions for businesses and projects
             </p>
 
-            <div className="explore-cards">
-                {cardTexts.map((label, index) => (
-                    <ExploreCard key={index} label={label} />
+            {/*<div className="explore-cards">*/}
+            {/*    {cardTexts.map((label, index) => (*/}
+            {/*        <ExploreCard key={index} label={label} />*/}
+            {/*    ))}*/}
+            {/*</div>*/}
+
+            <h2 className="explore-heading">
+                Revenue Sharing & Rewards for Stakers
+            </h2>
+
+            <ul className="explore-list">
+                {listTexts.map((text, index) => (
+                    <li key={index}>{text}</li>
                 ))}
-            </div>
+            </ul>
 
             <div className="center-items explore-actions">
                 <Button
@@ -41,12 +58,12 @@ const Explore: FC = () => {
 
 export default Explore;
 
-type ExploreCardProps = { label: string };
-
-const ExploreCard: FC<ExploreCardProps> = ({ label }) => {
-    return (
-        <div className="explore-card">
-            <span className="explore-card-label">{label}</span>
-        </div>
-    );
-};
+// type ExploreCardProps = { label: string };
+//
+// const ExploreCard: FC<ExploreCardProps> = ({ label }) => {
+//     return (
+//         <div className="explore-card">
+//             <span className="explore-card-label">{label}</span>
+//         </div>
+//     );
+// };
