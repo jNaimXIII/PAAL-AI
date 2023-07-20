@@ -36,7 +36,7 @@ const Hero: FC = () => {
                     </div>
 
                     <a
-                        href="https://etherscan.io/token/0x6f3c0d29e27bd76b45063ec6f4641f07f260ae5a"
+                        href="https://etherscan.io/token/0x14feE680690900BA0ccCfC76AD70Fd1b95D10e16"
                         target="_blank"
                         className="wallet-address"
                     >
