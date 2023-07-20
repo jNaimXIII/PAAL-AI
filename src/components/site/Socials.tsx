@@ -86,7 +86,7 @@ const Socials: FC<SocialsProps> = ({ large = false, small = false }) => {
             <a
                 className="social-link"
                 href={
-                    "https://www.dextools.io/app/ether/pair-explorer/0x58bd02eb1061155defcbb9ffa541a16ec6942b79"
+                    "https://www.dextools.io/app/en/ether/pair-explorer/0x2a6c340bcbb0a79d3deecd3bc5cbc2605ea9259f"
                 }
                 target="_blank"
             >

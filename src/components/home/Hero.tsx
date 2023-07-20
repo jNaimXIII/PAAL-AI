@@ -40,7 +40,7 @@ const Hero: FC = () => {
                         target="_blank"
                         className="wallet-address"
                     >
-                        0x6f3c0D29e27BD76b45063EC6F4641F07F260AE5A
+                        0x14feE680690900BA0ccCfC76AD70Fd1b95D10e16
                     </a>
                 </div>
             </section>
