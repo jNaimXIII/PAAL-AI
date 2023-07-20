@@ -1,0 +1,106 @@
+.tools-container {
+    margin-bottom: 4rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../../assets/tools/tools-background.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @media (max-width: 768px) {
+        background-size: 150;
+    }
+
+    .tools-heading {
+        color: white;
+        font-family: "Monument Extended", sans-serif;
+        font-weight: 800;
+        font-size: 4rem;
+
+        @media (max-width: 1024px) {
+            font-size: 3rem;
+        }
+    }
+
+    .split {
+        display: flex;
+        justify-content: space-between;
+        gap: 6rem;
+
+        @media (max-width: 968px) {
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        .selectors {
+            flex: 2;
+
+            .selector {
+                color: white;
+                font-family: "Monument Extended", sans-serif;
+                font-weight: 800;
+                font-size: 2.5rem;
+                padding: 4.6rem 4rem;
+
+                background: linear-gradient(
+                    to right,
+                    #4c166c -26.79%,
+                    rgba(0, 0, 0, 0) 49.09%,
+                    #4c166c 118.9%
+                );
+                background-size: 140%;
+
+                margin: 1rem 0;
+
+                border-top-right-radius: 1.6rem;
+                border-bottom-right-radius: 1.6rem;
+
+                transition: all 0.3s ease-in;
+
+                width: 90%;
+                &.selected {
+                    background: #390a56;
+                    width: 100%;
+                }
+
+                @media (max-width: 1024px) {
+                    font-size: 2rem;
+                    padding: 2.8rem 2rem;
+                }
+
+                @media (max-width: 968px) {
+                    font-size: 1.4rem;
+                    padding: 1.5rem 1rem;
+                }
+            }
+        }
+
+        .content {
+            flex: 3;
+
+            .list {
+                font-family: "Integral CF", sans-serif;
+                font-size: 1.5rem;
+                color: white;
+
+                line-height: 1.8em;
+
+                margin-bottom: 5rem;
+
+                @media (max-width: 968px) {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .action {
+                @media (max-width: 768px) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

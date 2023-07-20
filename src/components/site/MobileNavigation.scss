@@ -17,14 +17,16 @@
         padding: 1px;
         border-radius: 5.26316px;
 
-        background: linear-gradient(
-            135deg,
-            #ac2bf9 0%,
-            rgba(255, 255, 255, 0.29) 50%,
-            #ac2bf9 100%
-        );
-        background-size: 200%;
-        background-position: center;
+        @media (max-width: 1024px) {
+            background: linear-gradient(
+                135deg,
+                #ac2bf9 0%,
+                rgba(255, 255, 255, 0.29) 50%,
+                #ac2bf9 100%
+            );
+            background-size: 200%;
+            background-position: center;
+        }
 
         &:hover {
             cursor: pointer;
@@ -40,6 +42,10 @@
             font-size: 1.4rem;
             text-transform: uppercase;
             font-family: "Integral CF", sans-serif;
+
+            @media (max-width: 1024px) {
+                display: none;
+            }
         }
 
         .mobile-navigation-toggle-icon {
