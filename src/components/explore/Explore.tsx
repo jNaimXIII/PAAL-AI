@@ -12,7 +12,8 @@ const Explore: FC = () => {
 
     const listTexts = [
         "1% of all $PAAL trading volume.",
-        "AI tools subscription + Ads/Development revenue sharing.",
+        "AI tools subscription.",
+        "Service revenue sharing.",
         "25% referral rewards.",
         "Partner projects Airdrops.",
     ];

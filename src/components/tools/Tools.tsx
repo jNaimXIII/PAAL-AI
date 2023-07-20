@@ -10,7 +10,7 @@ export default function Tools() {
             title: "MyPaal",
             action: {
                 label: "Setup MyPaal",
-                link: "",
+                link: "https://paal.omp.dev",
             },
             messages: [
                 "AI bot for crypto communities, providing answers, chat summaries, and sentiment analysis.",
@@ -24,8 +24,8 @@ export default function Tools() {
         {
             title: "AutoPaal",
             action: {
-                label: "Setup AutoPaal",
-                link: "",
+                label: "Setup MyPaal",
+                link: "https://paal.omp.dev",
             },
             messages: [
                 "Includes MyPaal features plus autonomous AI research and analysis.",
@@ -39,8 +39,8 @@ export default function Tools() {
         {
             title: "AutoPaal-RT",
             action: {
-                label: "Setup AutoPaal-RT",
-                link: "",
+                label: "Setup MyPaal",
+                link: "https://paal.omp.dev",
             },
             messages: [
                 "Includes MyPaal and AutoPaal features plus fast trading, limit order, and private transactions.",
