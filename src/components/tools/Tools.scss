@@ -51,7 +51,6 @@
             .selector {
                 color: white;
                 font-family: "Monument Extended", sans-serif;
-                font-weight: 800;
                 font-size: 1.9rem;
                 padding: 3.6rem 2.4rem;
 
@@ -74,6 +73,7 @@
                 &.selected {
                     background: #390a56;
                     width: 100%;
+                    font-weight: 800;
                 }
 
                 @media (max-width: 1024px) {
@@ -103,7 +103,7 @@
 
             .list {
                 font-family: "Integral CF", sans-serif;
-                font-size: 1.35rem;
+                font-size: 1.25rem;
                 color: white;
 
                 line-height: 1.8em;

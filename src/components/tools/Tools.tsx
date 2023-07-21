@@ -13,40 +13,44 @@ export default function Tools() {
                 link: "https://paal.omp.dev",
             },
             messages: [
-                "AI bot for crypto communities, providing answers, chat summaries, and sentiment analysis.",
-                "Shareable to TG, Discord, etc., with customizable content and AI personality.",
-                "Supports Word, PDF, website links, and YouTube videos.",
-                "Multiple bots for different channels.",
-                "Data secured with Google Cloud encryption.",
+                "Cryptocurrency-focused AI: Handles inquiries, summarizes conversations, and assesses chat sentiment.",
+                "Multi-platform Integration: Compatible with platforms like Telegram, Discord, etc.",
+                "Customizable: Personalize bot's personality, response style, and knowledge base about various coins and projects.",
+                "Content Upload: Supports Word, PDF, website, YouTube links for bot learning.",
+                "Multiple Bots: Multiple bots can be utilized across various channels.",
+                "Real-time Data Fetching: Collects real-time project data from multiple sources.",
+                "Secure: Uses FIPS 140-2 validated encryption by Google Cloud for data security and privacy.",
                 "Revenue sharing with $PAAL stakers.",
             ],
         },
         {
             title: "AutoPaal",
             action: {
-                label: "Setup MyPaal",
-                link: "https://paal.omp.dev",
+                label: "Coming Soon",
+                link: "/",
             },
             messages: [
-                "Includes MyPaal features plus autonomous AI research and analysis.",
-                "Connected to curated crypto knowledge bases and data sources.",
-                "Provides comprehensive analysis for all crypto user levels.",
-                "Built-in command presets and configurable watch agents.",
-                "Rigorous data quality and accuracy process.",
-                "Revenue sharing with $PAAL stakers.",
+                "Autonomous AI: Provides crypto-focused research, insights, and analysis.",
+                "Quality Data Sources: Utilizes trusted and validated data sources.",
+                "Broad User Base: Serves users from beginners to experts in crypto.",
+                "Cited Responses: Provides comprehensive answers with source citations.",
+                "Preset Commands: Uses community-suggested commands for powerful results.",
+                "Configurable Watch Agents: Monitors market trends and notifies users of specific conditions.",
             ],
         },
         {
-            title: "AutoPaal-RT",
+            title: "AutoPaal X",
             action: {
-                label: "Setup MyPaal",
-                link: "https://paal.omp.dev",
+                label: "Coming Soon",
+                link: "/",
             },
             messages: [
-                "Includes MyPaal and AutoPaal features plus fast trading, limit order, and private transactions.",
-                "Features token scanner and auto sniper with custom parameters.",
-                "Rigorous data quality and accuracy process.",
-                "Revenue sharing with $PAAL stakers.",
+                "Comprehensive Features: Includes all the features of MyPaal and AutoPaal, providing a comprehensive tool for users.",
+                "Lightning-Fast Trading: Offers lightning-fast trading, limit orders, and private transactions, enhancing the trading experience for users.",
+                "Token Scanner: Features a token scanner, allowing users to easily find and track tokens.",
+                "Custom Parameter Settings: With AutoPaal-X, users can set custom parameters for the auto sniper, providing greater control and customization.",
+                "Data Quality and Accuracy: Ensures data quality and accuracy through a rigorous testing and validation process, providing reliable and accurate information for users.",
+                "Revenue Sharing: Provides revenue sharing with $PAAL stakers, offering an additional incentive for staking.",
             ],
         },
     ];
@@ -72,11 +76,11 @@ export default function Tools() {
                 </div>
 
                 <div className="content">
-                    <ul className="list">
+                    <ol className="list">
                         {content[selectedIndex].messages.map((message) => (
                             <li key={message}>{message}</li>
                         ))}
-                    </ul>
+                    </ol>
 
                     <div className="action">
                         <Button
