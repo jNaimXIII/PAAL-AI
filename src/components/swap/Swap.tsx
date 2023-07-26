@@ -29,7 +29,7 @@ import {
     trustWallet,
     coinbaseWallet,
 } from "@rainbow-me/rainbowkit/wallets";
-import { parseEther } from "viem";
+import { parseEther, parseUnits } from "viem";
 import PaalTokenLogo from "../../assets/site/paal-token.jpeg";
 
 export default function Swap() {
@@ -198,7 +198,6 @@ function TokenSwapButton(props: TokenSwapButtonProps) {
         const data = await response.json();
 
         if (data) {
-            console.log(data);
             setSwapTxData(data.data[0]?.tx);
         }
     }
@@ -243,7 +242,10 @@ function TokenSwapButton(props: TokenSwapButtonProps) {
                     chainId: "1",
                     tokenContractAddress:
                         props.selectedToken.tokenContractAddress,
-                    approveAmount: parseEther(props.amount).toString(),
+                    approveAmount: parseUnits(
+                        props.amount,
+                        props.selectedToken.decimals
+                    ).toString(),
                 }).toString()
         );
         const data = await response.json();
@@ -266,10 +268,17 @@ function TokenSwapButton(props: TokenSwapButtonProps) {
     }, [isApproveSuccess]);
 
     async function handleSendTransaction() {
+        if (!account.address) {
+            alert("Connect Wallet!");
+            return;
+        }
+
         try {
             let allowance = await getAllowanceData();
 
-            while (allowance < Number(props.amount)) {
+            let tries = 0;
+            while (allowance < Number(props.amount) && tries < 3) {
+                tries++;
                 await approveTransaction();
                 allowance = await getAllowanceData();
             }
