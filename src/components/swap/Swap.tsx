@@ -26,6 +26,8 @@ import {
     okxWallet,
     rainbowWallet,
     walletConnectWallet,
+    trustWallet,
+    coinbaseWallet,
 } from "@rainbow-me/rainbowkit/wallets";
 import { parseEther } from "viem";
 
@@ -328,6 +330,8 @@ const connectors = connectorsForWallets([
             metaMaskWallet({ projectId, chains }),
             rainbowWallet({ projectId, chains }),
             walletConnectWallet({ projectId, chains }),
+            trustWallet({ projectId, chains }),
+            coinbaseWallet({ appName: "PaalAI", chains }),
         ],
     },
 ]);
