@@ -30,10 +30,14 @@ import {
     coinbaseWallet,
 } from "@rainbow-me/rainbowkit/wallets";
 import { parseEther } from "viem";
+import PaalTokenLogo from "../../assets/site/paal-token.jpeg";
 
 export default function Swap() {
     const [availableTokens, setAvailableTokens] = useState<any[]>([]);
     const [selectedTokenSymbol, setSelectedTokenSymbol] = useState("ETH");
+    const [equivalentPAALAmount, setEquivalentPAALAmount] = useState(0);
+    const [paalTokenInfo, setPaalTokenInfo] = useState<any>({});
+
     useEffect(() => {
         const whitelistedTokens = ["ETH", "USDT", "USDC"];
 
@@ -50,6 +54,11 @@ export default function Swap() {
 
                 setAvailableTokens(allowedTokens);
                 // setAvailableTokens(data.data);
+
+                const paalTokenInfo = data.data.find((token: any) => {
+                    return token.tokenSymbol === "PAAL";
+                });
+                setPaalTokenInfo(paalTokenInfo);
             });
     }, []);
 
@@ -76,7 +85,10 @@ export default function Swap() {
                         </span>
                     </div>
 
-                    <div className="select-row">
+                    <div
+                        className="select-row"
+                        style={{ marginBottom: "3rem" }}
+                    >
                         <div>
                             <TokenSelect
                                 availableTokens={availableTokens}
@@ -96,12 +108,34 @@ export default function Swap() {
                             {/*<span>$1,869.81</span>*/}
                         </div>
                     </div>
+
+                    <div className="select-row" style={{}}>
+                        <div className="token-search">
+                            <img
+                                src={
+                                    paalTokenInfo?.tokenLogoUrl || PaalTokenLogo
+                                }
+                                alt=""
+                                className="coin-icon"
+                            />
+                            <span className="input">PAAL</span>
+                        </div>
+
+                        <div className="stats">
+                            <input
+                                disabled
+                                type="number"
+                                value={equivalentPAALAmount}
+                            />
+                        </div>
+                    </div>
                 </div>
 
                 <div className="connect-button-container">
                     <TokenSwapButton
                         selectedToken={selectedToken}
                         amount={String(Number(tokenAmount) || 1)}
+                        setEquivalentAmount={setEquivalentPAALAmount}
                     />
 
                     <ConnectButton />
@@ -114,6 +148,7 @@ export default function Swap() {
 type TokenSwapButtonProps = {
     selectedToken: any;
     amount: string;
+    setEquivalentAmount: (value: any) => void;
 };
 
 function TokenSwapButton(props: TokenSwapButtonProps) {
@@ -134,6 +169,12 @@ function TokenSwapButton(props: TokenSwapButtonProps) {
         getSwapData();
     }, [props.amount, props.selectedToken]);
 
+    useEffect(() => {
+        if (swapTxData?.minReceiveAmount) {
+            props.setEquivalentAmount(swapTxData.minReceiveAmount);
+        }
+    }, [swapTxData?.minReceiveAmount]);
+
     async function getSwapData() {
         if (!account.address || !props.selectedToken) return;
 
@@ -145,6 +186,9 @@ function TokenSwapButton(props: TokenSwapButtonProps) {
                     chainId: "1",
                     amount: props.amount,
                     fromTokenAddress: props.selectedToken.tokenContractAddress,
+                    // props.selectedToken.tokenSymbol === "ETH"
+                    //     ? "0x0000000000000000000000000000000000000000"
+                    //     : props.selectedToken.tokenContractAddress,
                     toTokenAddress:
                         "0x14feE680690900BA0ccCfC76AD70Fd1b95D10e16",
                     userWalletAddress: account.address,
@@ -154,7 +198,8 @@ function TokenSwapButton(props: TokenSwapButtonProps) {
         const data = await response.json();
 
         if (data) {
-            setSwapTxData(data.data[0].tx);
+            console.log(data);
+            setSwapTxData(data.data[0]?.tx);
         }
     }
 
@@ -287,7 +332,7 @@ function TokenSelect(props: TokenSelectProps) {
                         />
                     </Combobox.Button>
                 </div>
-                <Combobox.Options className="options">
+                <Combobox.Options className="options" style={{ zIndex: 10 }}>
                     {filteredTokens.map((token, index) => (
                         <Combobox.Option
                             key={token.tokenSymbol + index}
