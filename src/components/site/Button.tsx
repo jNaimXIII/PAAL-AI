@@ -6,15 +6,22 @@ export type Props = {
     mini?: boolean;
     link?: string;
     className?: string;
+    onClick?: () => void;
 };
 
-const Button: FC<Props> = ({ label, mini, link = "", className = "" }) => {
+const Button: FC<Props> = ({
+    label,
+    mini,
+    link = "",
+    className = "",
+    onClick,
+}) => {
     return (
         <div className={`button-wrapper ${className}`}>
             <button
                 className={`${mini ? "button-mini" : ""} button`}
                 onClick={() => {
-                    window.location.href = link;
+                    onClick ? onClick() : (window.location.href = link);
                 }}
             >
                 {label}

@@ -13,6 +13,7 @@ import Whitelist from "../components/whitelist/Whitelist";
 import Footer from "../components/site/Footer";
 import MobileNavigation from "../components/site/MobileNavigation";
 import Tools from "../components/tools/Tools.tsx";
+import Swap from "../components/swap/Swap.tsx";
 
 const Home: FC = () => {
     return (
@@ -21,9 +22,9 @@ const Home: FC = () => {
 
             <Hero />
 
-            <Divider />
-            <Parallax />
-            <Divider />
+            {/*<Divider />*/}
+            {/*<Parallax />*/}
+            {/*<Divider />*/}
 
             {/* NOT ACCESSED FROM HERE */}
             {/* <Discover /> */}
@@ -41,11 +42,12 @@ const Home: FC = () => {
 
             <Benefits />
 
-            <Divider />
             {/* <Empowered /> */}
-            {/* <Divider /> */}
 
-            {/* NOT ACCESSED FROM HERE */}
+            <Divider />
+            <Swap />
+            <Divider />
+
             <Services />
 
             <Whitelist />
