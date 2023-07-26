@@ -117,7 +117,20 @@ export default function Swap() {
                                 type="number"
                                 placeholder="1"
                                 value={tokenAmount}
-                                onChange={(e) => setTokenAmount(e.target.value)}
+                                onChange={(e) => {
+                                    setTokenAmount(e.target.value);
+                                }}
+                                onBlur={(e) => {
+                                    const numAmount = parseFloat(
+                                        e.target.value
+                                    );
+
+                                    setTokenAmount(
+                                        numAmount > 0
+                                            ? numAmount.toString()
+                                            : "1"
+                                    );
+                                }}
                             />
                             {/*<span>$1,869.81</span>*/}
                         </div>
