@@ -37,6 +37,7 @@ export default function Swap() {
     const [selectedTokenSymbol, setSelectedTokenSymbol] = useState("ETH");
     const [equivalentPAALAmount, setEquivalentPAALAmount] = useState(0);
     const [paalTokenInfo, setPaalTokenInfo] = useState<any>({});
+    const [wEthTokenInfo, setWethTokenInfo] = useState<any>({});
 
     useEffect(() => {
         const whitelistedTokens = ["ETH", "USDT", "USDC"];
@@ -55,16 +56,29 @@ export default function Swap() {
                 setAvailableTokens(allowedTokens);
                 // setAvailableTokens(data.data);
 
-                const paalTokenInfo = data.data.find((token: any) => {
-                    return token.tokenSymbol === "PAAL";
-                });
+                const paalTokenInfo = data.data.find(
+                    (token: any) => token.tokenSymbol === "PAAL"
+                );
                 setPaalTokenInfo(paalTokenInfo);
+
+                const wEthTokenInfo = data.data.find(
+                    (token: any) => token.tokenSymbol === "WETH"
+                );
+                setWethTokenInfo(wEthTokenInfo);
             });
     }, []);
 
-    const selectedToken = availableTokens.find(
-        (token) => token?.tokenSymbol === selectedTokenSymbol
-    );
+    const selectedToken =
+        selectedTokenSymbol === "ETH"
+            ? {
+                  ...availableTokens.find(
+                      (token) => token?.tokenSymbol === selectedTokenSymbol
+                  ),
+                  tokenContractAddress: wEthTokenInfo?.tokenContractAddress,
+              }
+            : availableTokens.find(
+                  (token) => token?.tokenSymbol === selectedTokenSymbol
+              );
     const [tokenAmount, setTokenAmount] = useState("1");
 
     return (
@@ -125,7 +139,7 @@ export default function Swap() {
                             <input
                                 disabled
                                 type="number"
-                                value={equivalentPAALAmount}
+                                value={equivalentPAALAmount / 1000}
                             />
                         </div>
                     </div>
@@ -156,11 +170,11 @@ function TokenSwapButton(props: TokenSwapButtonProps) {
 
     const [swapTxData, setSwapTxData] = useState<any>(null);
     const { config: swapTxConfig } = usePrepareSendTransaction({
-        value: parseEther(swapTxData?.value || "0"),
-        gas: swapTxData?.gasPrice,
-        gasPrice: swapTxData?.gasPrice,
-        to: swapTxData?.to,
-        data: swapTxData?.data,
+        value: parseEther(swapTxData?.tx?.value || "0"),
+        gas: swapTxData?.tx?.gasPrice,
+        gasPrice: swapTxData?.tx?.gasPrice,
+        to: swapTxData?.tx?.to,
+        data: swapTxData?.tx?.data,
     });
     const { isSuccess: isSwapSuccess, sendTransaction: swapSendTransaction } =
         useSendTransaction(swapTxConfig);
@@ -170,10 +184,10 @@ function TokenSwapButton(props: TokenSwapButtonProps) {
     }, [props.amount, props.selectedToken]);
 
     useEffect(() => {
-        if (swapTxData?.minReceiveAmount) {
-            props.setEquivalentAmount(swapTxData.minReceiveAmount);
+        if (swapTxData?.routerResult?.toTokenAmount) {
+            props.setEquivalentAmount(swapTxData?.routerResult?.toTokenAmount);
         }
-    }, [swapTxData?.minReceiveAmount]);
+    }, [swapTxData?.routerResult?.toTokenAmount]);
 
     async function getSwapData() {
         if (!account.address || !props.selectedToken) return;
@@ -186,9 +200,6 @@ function TokenSwapButton(props: TokenSwapButtonProps) {
                     chainId: "1",
                     amount: props.amount,
                     fromTokenAddress: props.selectedToken.tokenContractAddress,
-                    // props.selectedToken.tokenSymbol === "ETH"
-                    //     ? "0x0000000000000000000000000000000000000000"
-                    //     : props.selectedToken.tokenContractAddress,
                     toTokenAddress:
                         "0x14feE680690900BA0ccCfC76AD70Fd1b95D10e16",
                     userWalletAddress: account.address,
@@ -198,7 +209,7 @@ function TokenSwapButton(props: TokenSwapButtonProps) {
         const data = await response.json();
 
         if (data) {
-            setSwapTxData(data.data[0]?.tx);
+            setSwapTxData(data.data[0]);
         }
     }
 
