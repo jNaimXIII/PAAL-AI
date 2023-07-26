@@ -22,9 +22,9 @@ const Home: FC = () => {
 
             <Hero />
 
-            {/*<Divider />*/}
-            {/*<Parallax />*/}
-            {/*<Divider />*/}
+            <Divider />
+            <Parallax />
+            <Divider />
 
             {/* NOT ACCESSED FROM HERE */}
             {/* <Discover /> */}
