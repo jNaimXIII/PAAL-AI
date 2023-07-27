@@ -86,86 +86,114 @@ export default function Swap() {
             <section className="site-content-container swap-container">
                 <h3>Swap $PAAL</h3>
 
-                <div className="swap-card">
-                    <div className="heading">
-                        <span className="label">From</span>
-                        <img
-                            src={selectedToken?.tokenLogoUrl}
-                            alt=""
-                            className="swap-coin-icon"
-                        />
-                        <span className="coin-name">
-                            {selectedToken?.tokenName}
-                        </span>
+                <div
+                    className="swap-methods-container"
+                    style={{
+                        display: "flex",
+                        gap: "1rem",
+                    }}
+                >
+                    <div>
+                        <div className="swap-card">
+                            <div className="heading">
+                                <span className="label">From</span>
+                                <img
+                                    src={selectedToken?.tokenLogoUrl}
+                                    alt=""
+                                    className="swap-coin-icon"
+                                />
+                                <span className="coin-name">
+                                    {selectedToken?.tokenName}
+                                </span>
+                            </div>
+
+                            <div
+                                className="select-row"
+                                style={{ marginBottom: "3rem" }}
+                            >
+                                <div>
+                                    <TokenSelect
+                                        availableTokens={availableTokens}
+                                        selectedToken={selectedTokenSymbol}
+                                        setSelectedToken={
+                                            setSelectedTokenSymbol
+                                        }
+                                        selectedTokenImage={
+                                            selectedToken?.tokenLogoUrl
+                                        }
+                                    />
+                                </div>
+
+                                <div className="stats">
+                                    <input
+                                        type="number"
+                                        placeholder="1"
+                                        value={tokenAmount}
+                                        onChange={(e) => {
+                                            setTokenAmount(e.target.value);
+                                        }}
+                                        onBlur={(e) => {
+                                            const numAmount = parseFloat(
+                                                e.target.value
+                                            );
+
+                                            setTokenAmount(
+                                                numAmount > 0
+                                                    ? numAmount.toString()
+                                                    : "1"
+                                            );
+                                        }}
+                                    />
+                                    {/*<span>$1,869.81</span>*/}
+                                </div>
+                            </div>
+
+                            <div className="select-row" style={{}}>
+                                <div className="token-search">
+                                    <img
+                                        src={
+                                            paalTokenInfo?.tokenLogoUrl ||
+                                            PaalTokenLogo
+                                        }
+                                        alt=""
+                                        className="coin-icon"
+                                    />
+                                    <span className="input">PAAL</span>
+                                </div>
+
+                                <div className="stats">
+                                    <input
+                                        disabled
+                                        type="number"
+                                        value={equivalentPAALAmount.toFixed(2)}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="connect-button-container">
+                            <TokenSwapButton
+                                selectedToken={selectedToken}
+                                amount={String(Number(tokenAmount) || 1)}
+                                setEquivalentAmount={setEquivalentPAALAmount}
+                            />
+
+                            <ConnectButton />
+                        </div>
                     </div>
 
-                    <div
-                        className="select-row"
-                        style={{ marginBottom: "3rem" }}
-                    >
-                        <div>
-                            <TokenSelect
-                                availableTokens={availableTokens}
-                                selectedToken={selectedTokenSymbol}
-                                setSelectedToken={setSelectedTokenSymbol}
-                                selectedTokenImage={selectedToken?.tokenLogoUrl}
-                            />
-                        </div>
-
-                        <div className="stats">
-                            <input
-                                type="number"
-                                placeholder="1"
-                                value={tokenAmount}
-                                onChange={(e) => {
-                                    setTokenAmount(e.target.value);
-                                }}
-                                onBlur={(e) => {
-                                    const numAmount = parseFloat(
-                                        e.target.value
-                                    );
-
-                                    setTokenAmount(
-                                        numAmount > 0
-                                            ? numAmount.toString()
-                                            : "1"
-                                    );
-                                }}
-                            />
-                            {/*<span>$1,869.81</span>*/}
-                        </div>
+                    <div>
+                        <iframe
+                            width="400"
+                            height="720"
+                            style={{
+                                margin: "0 auto",
+                                display: "block",
+                            }}
+                            allow="clipboard-read *; clipboard-write *; web-share *; accelerometer *; autoplay *; camera *; gyroscope *; payment *; geolocation *"
+                            src="https://flooz.xyz/embed/trade?swapDisabled=true&swapLockToToken=false&onRampDisabled=false&onRampAsDefault=false&onRampDefaultAmount=200&onRampTokenAddress=0x14feE680690900BA0ccCfC76AD70Fd1b95D10e16&onRampLockToken=true&stakeDisabled=true&network=eth&lightMode=false&primaryColor=%23a12aeb&backgroundColor=transparent&roundedCorners=10&padding=20&refId=fU5BIA"
+                        ></iframe>
                     </div>
-
-                    <div className="select-row" style={{}}>
-                        <div className="token-search">
-                            <img
-                                src={
-                                    paalTokenInfo?.tokenLogoUrl || PaalTokenLogo
-                                }
-                                alt=""
-                                className="coin-icon"
-                            />
-                            <span className="input">PAAL</span>
-                        </div>
-
-                        <div className="stats">
-                            <input
-                                disabled
-                                type="number"
-                                value={equivalentPAALAmount / 1000}
-                            />
-                        </div>
-                    </div>
-                </div>
-
-                <div className="connect-button-container">
-                    <TokenSwapButton
-                        selectedToken={selectedToken}
-                        amount={String(Number(tokenAmount) || 1)}
-                        setEquivalentAmount={setEquivalentPAALAmount}
-                    />
-
-                    <ConnectButton />
                 </div>
             </section>
         </Web3Providers>
@@ -198,7 +226,9 @@ function TokenSwapButton(props: TokenSwapButtonProps) {
 
     useEffect(() => {
         if (swapTxData?.routerResult?.toTokenAmount) {
-            props.setEquivalentAmount(swapTxData?.routerResult?.toTokenAmount);
+            props.setEquivalentAmount(
+                swapTxData?.routerResult?.toTokenAmount / 10 ** 9
+            );
         }
     }, [swapTxData?.routerResult?.toTokenAmount]);
 
@@ -211,7 +241,10 @@ function TokenSwapButton(props: TokenSwapButtonProps) {
                 "/swap?" +
                 new URLSearchParams({
                     chainId: "1",
-                    amount: props.amount,
+                    amount: parseUnits(
+                        props.amount,
+                        props.selectedToken.decimals
+                    ).toString(),
                     fromTokenAddress: props.selectedToken.tokenContractAddress,
                     toTokenAddress:
                         "0x14feE680690900BA0ccCfC76AD70Fd1b95D10e16",

@@ -167,4 +167,19 @@
         align-items: center;
         padding: 1rem;
     }
+
+    .swap-methods-container {
+        @media (max-width: 1024px) {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    iframe {
+        border: none;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
 }

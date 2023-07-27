@@ -48,8 +48,6 @@ const Home: FC = () => {
             <Swap />
             <Divider />
 
-            <Divider />
-
             <Services />
 
             <Whitelist />
