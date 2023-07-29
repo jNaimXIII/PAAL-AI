@@ -1,0 +1,44 @@
+.partners-container {
+    padding: 4rem 2rem;
+
+    h3 {
+        font-size: 4rem;
+        color: white;
+        font-family: "Monument Extended", sans-serif;
+        font-weight: 700;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        text-align: center;
+        text-transform: uppercase;
+
+        @media (max-width: 768px) {
+            font-size: 3rem;
+        }
+
+        @media (max-width: 512px) {
+            font-size: 2.6rem;
+        }
+    }
+
+    .images {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        img {
+            height: 60px;
+
+            @media (max-width: 512px) {
+                height: 50px;
+            }
+        }
+    }
+}

@@ -14,6 +14,7 @@ import Footer from "../components/site/Footer";
 import MobileNavigation from "../components/site/MobileNavigation";
 import Tools from "../components/tools/Tools.tsx";
 import Swap from "../components/swap/Swap.tsx";
+import Partners from "../components/partners/Partners.tsx";
 
 const Home: FC = () => {
     return (
@@ -49,6 +50,8 @@ const Home: FC = () => {
             <Divider />
 
             <Services />
+
+            <Partners />
 
             <Whitelist />
 
