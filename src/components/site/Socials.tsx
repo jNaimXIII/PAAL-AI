@@ -4,12 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faDiscord,
     faTelegram,
-    // faFacebook,
-    // faInstagram,
     faTwitter,
-    // faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import DexToolsIcon from "../../assets/icons/dextools.svg";
+import GeckoTerminalIcon from "../../assets/icons/geckoterminal.svg";
 
 type SocialsProps = {
     large?: boolean;
@@ -91,6 +89,19 @@ const Socials: FC<SocialsProps> = ({ large = false, small = false }) => {
                 target="_blank"
             >
                 <img src={DexToolsIcon} />
+            </a>
+
+            <a
+                className="social-link"
+                href={
+                    "https://www.geckoterminal.com/eth/pools/0x2a6c340bcbb0a79d3deecd3bc5cbc2605ea9259f"
+                }
+                target="_blank"
+            >
+                <img
+                    src={GeckoTerminalIcon}
+                    style={{ filter: "grayscale(100%)" }}
+                />
             </a>
         </div>
     );
