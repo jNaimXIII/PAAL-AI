@@ -16,7 +16,7 @@ const Features: FC = () => {
         },
         {
             label: "Custom data set",
-            link: "https://docs.paalai.io/usage/dataset",
+            link: "https://docs.paalai.io/dashboard/knowledge",
         },
     ];
     const featuresGroupTwo = [
@@ -30,7 +30,7 @@ const Features: FC = () => {
         },
         {
             label: "LLM for crypto",
-            link: "https://docs.paalai.io/features/llm-for-crypto",
+            link: "https://docs.paalai.io/features/tools/autopaal",
         },
     ];
 
@@ -84,8 +84,9 @@ const Features: FC = () => {
             </div>
 
             <p className="features-info">
-                AI is the broader concept of machines being able to carry out
-                tasks in a way that would normally require human intelligence.
+                AI is the ability of machines to learn and think like humans,
+                and to use that knowledge to perform tasks that would otherwise
+                require human intelligence.
             </p>
         </section>
     );

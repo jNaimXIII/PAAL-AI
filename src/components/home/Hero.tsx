@@ -16,7 +16,9 @@ const Hero: FC = () => {
             <section className="hero-content site-content-container">
                 <div className="hero-top">
                     <h1 className="hero-heading">PAAL AI</h1>
-                    <p className="hero-sub-heading">Voice to Your Web Data</p>
+                    <p className="hero-sub-heading">
+                        The Voice To Your Web Data
+                    </p>
 
                     <div className="sponsor-row">
                         <Sponsor />
@@ -27,7 +29,7 @@ const Hero: FC = () => {
                     <div className="hero-actions">
                         <Button
                             label="Get my bot now"
-                            link="https://paal.omp.dev/"
+                            link="https://app.paal.ai/"
                         />
                     </div>
 

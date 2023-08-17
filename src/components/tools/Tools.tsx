@@ -10,7 +10,7 @@ export default function Tools() {
             title: "MyPaal",
             action: {
                 label: "Setup MyPaal",
-                link: "https://paal.omp.dev",
+                link: "https://app.paal.ai/",
             },
             messages: [
                 "Cryptocurrency-focused AI: Handles inquiries, summarizes conversations, and assesses chat sentiment.",

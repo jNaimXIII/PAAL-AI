@@ -41,16 +41,18 @@ const Parallax: FC = () => {
 
     const parallaxTexts = [
         // "/prompt Hello MyPaal, tell me about the project?",
-        "/mypaal Hola MyPaal, ¿cuéntame sobre el proyecto?",
-        "/mypaal Hello MyPaal, 告诉我有关该项目的信息",
-        "/mypaal Hallo MyPaal, erzähl mir etwas über das Projekt?",
+        "/mypaal Hello Paal, Tell Me About The Project?",
+        "/mypaal Hola Paal, ¿cuéntame sobre el proyecto?",
+        "/mypaal Hello Paal, 告诉我有关该项目的信息",
+        "/mypaal Hallo Paal, erzähl mir etwas über das Projekt?",
     ];
 
     return (
         <section className="parallax-container">
             <div className="vanta-background" ref={vantaRef}>
                 <InitialParallaxItem
-                    label={"/mypaal Hello MyPaal, tell me about the project?"}
+                    // label={"/mypaal Hello MyPaal, tell me about the project?"}
+                    label={"/mypaal Hello Paal, Tell Me About The Project?"}
                 />
             </div>
 

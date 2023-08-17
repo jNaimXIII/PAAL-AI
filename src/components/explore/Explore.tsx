@@ -50,7 +50,7 @@ const Explore: FC = () => {
                 <Button
                     label="Stake Now"
                     mini
-                    link="https://staking.paalai.io/"
+                    link="https://rewards.paalai.io/"
                 />
             </div>
         </section>
