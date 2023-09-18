@@ -5,17 +5,17 @@ import { useInView } from "react-intersection-observer";
 const Stats: FC = () => {
     const statItems = [
         {
-            number: 30,
+            number: 100,
             sign: "+",
             label: "Active projects",
         },
         {
-            number: 2500,
+            number: 10000,
             sign: "+",
             label: "Users",
         },
         {
-            number: 500,
+            number: 25000,
             sign: "+",
             label: "Custom dataset",
         },
@@ -30,6 +30,7 @@ const Stats: FC = () => {
                         label={label}
                         sign={sign}
                         number={number}
+                        duration={300}
                     />
                 ))}
             </div>
@@ -43,9 +44,10 @@ type StatItemProps = {
     number: number;
     sign: string;
     label: string;
+    duration: number;
 };
 
-const StatItem: FC<StatItemProps> = ({ number, sign, label }) => {
+const StatItem: FC<StatItemProps> = ({ number, sign, label, duration }) => {
     const { ref, inView } = useInView({
         threshold: 0,
     });
@@ -54,17 +56,25 @@ const StatItem: FC<StatItemProps> = ({ number, sign, label }) => {
     useEffect(() => {
         if (inView) {
             if (shown < number) {
+                const startTime = Date.now();
                 const interval = setInterval(() => {
-                    if (number % 2 === 0) setShown((shown) => shown + 2);
-                    else setShown((shown) => shown + 3);
-                }, 1);
+                    const elapsedTime = Date.now() - startTime;
+                    if (elapsedTime < duration) {
+                        const progress =
+                            (elapsedTime / duration) * (number - shown);
+                        setShown(Math.ceil(shown + progress));
+                    } else {
+                        setShown(number);
+                        clearInterval(interval); // Stop the interval when the duration is reached
+                    }
+                }, 16); // Using a small interval for smoother animation
 
                 return () => clearInterval(interval);
             }
         } else {
             setShown(0);
         }
-    }, [number, inView, shown]);
+    }, [number, inView, shown, duration]);
 
     return (
         <div className="stat-item" ref={ref}>

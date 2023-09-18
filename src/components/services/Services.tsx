@@ -7,18 +7,18 @@ import ServicesRobotLottieAnimation from "../../assets/services/services-robot-l
 const Services: FC = () => {
     const freeServices = [
         "Custom Dataset",
-        "Single Platform",
-        "Five Datasets",
-        "Document Limit",
+        "Unlimited Platforms",
+        "Unique Personality",
+        "Single Bot Export",
         "Customer Support",
     ];
 
     const premiumServices = [
-        "Hobby Features",
-        "Unlimited Documents",
-        "Custom Personality",
-        "Data Storage",
-        "Multi-platform",
+        "Unique Branding",
+        "Custom Commands",
+        "Unlimited Bot Export",
+        "AI Training",
+        "24/7 Customer Support",
     ];
 
     return (
@@ -30,29 +30,27 @@ const Services: FC = () => {
                     </h1>
 
                     <p className="services-info">
-                        PAAL AI, a token on Ethereum, incentivizes holders with
-                        reward and token buybacks to drive token demand and
-                        price.
+                        PAAL AI operates with a total supply of a billion tokens
+                        on the Ethereum blockchain where a tax of 4% is applied
+                        to all buys and sells, which is purposed for ETH payouts
+                        to stakers, marketing, buyback & burn, and development.
                     </p>
 
                     <p className="services-info">
-                        Users can earn tokens through interactions with our AI
-                        service, making referrals, and contributing to the
-                        community.
+                        Its revenue sources include a proprietary AI solution,
+                        advertising, taxes from trading, and future streams like
+                        subscription services, with half of these earnings
+                        shared with stakers, thus promoting participation and
+                        encouraging stability within the ecosystem.
                     </p>
 
                     <p className="services-info">
-                        Finally, tokens enable governance voting and can be
-                        staked for interest, unlocking premium features. We also
-                        accept Ethereum for service purchases, offering enticing
-                        discounts.
+                        Stakers can then stake their tokens in different pools
+                        based on their preference, benefitting from an
+                        auto-compound feature, referral system, claiming rewards
+                        mechanism and a share of all $PAAL trading volume, which
+                        directly ties into Paal's unique tax feature.
                     </p>
-
-                    <Lottie
-                        animationData={ServicesRobotLottieAnimation}
-                        loop
-                        style={{ maxWidth: "100%" }}
-                    />
                 </div>
 
                 <div className="services-col-right">
@@ -60,7 +58,7 @@ const Services: FC = () => {
                         <div className="list-wrapper">
                             <div className="list">
                                 <div className="heading">
-                                    <h3 className="name">Hobby Plan</h3>
+                                    <h3 className="name">Basic Plan</h3>
                                     {/* <span className="description">
                                             For small enterprise
                                         </span> */}
@@ -93,6 +91,11 @@ const Services: FC = () => {
                             </div>
                         </div>
                     </div>
+                    <Lottie
+                        animationData={ServicesRobotLottieAnimation}
+                        loop
+                        style={{ maxWidth: "100%" }}
+                    />
 
                     {/* <div className="service-titles">
                             <span className="title">Free</span>

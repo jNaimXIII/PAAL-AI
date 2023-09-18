@@ -31,6 +31,7 @@ const Hero: FC = () => {
                             label="Get my bot now"
                             link="https://app.paal.ai/"
                         />
+                        <Button label="PAAL AI App waitlist" />
                     </div>
 
                     <div className="hero-socials">

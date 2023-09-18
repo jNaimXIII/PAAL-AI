@@ -71,14 +71,14 @@ export default function Swap() {
     const selectedToken =
         selectedTokenSymbol === "ETH"
             ? {
-                ...availableTokens.find(
-                    (token) => token?.tokenSymbol === selectedTokenSymbol
-                ),
-                tokenContractAddress: wEthTokenInfo?.tokenContractAddress,
-            }
+                  ...availableTokens.find(
+                      (token) => token?.tokenSymbol === selectedTokenSymbol
+                  ),
+                  tokenContractAddress: wEthTokenInfo?.tokenContractAddress,
+              }
             : availableTokens.find(
-                (token) => token?.tokenSymbol === selectedTokenSymbol
-            );
+                  (token) => token?.tokenSymbol === selectedTokenSymbol
+              );
     const [tokenAmount, setTokenAmount] = useState("1");
 
     return (
@@ -238,19 +238,19 @@ function TokenSwapButton(props: TokenSwapButtonProps) {
         const API_URL = "https://www.okx.com/api/v5/dex/aggregator";
         const response = await fetch(
             API_URL +
-            "/swap?" +
-            new URLSearchParams({
-                chainId: "1",
-                amount: parseUnits(
-                    props.amount,
-                    props.selectedToken.decimals
-                ).toString(),
-                fromTokenAddress: props.selectedToken.tokenContractAddress,
-                toTokenAddress:
-                    "0x14feE680690900BA0ccCfC76AD70Fd1b95D10e16",
-                userWalletAddress: account.address,
-                slippage: String(0.1),
-            }).toString()
+                "/swap?" +
+                new URLSearchParams({
+                    chainId: "1",
+                    amount: parseUnits(
+                        props.amount,
+                        props.selectedToken.decimals
+                    ).toString(),
+                    fromTokenAddress: props.selectedToken.tokenContractAddress,
+                    toTokenAddress:
+                        "0x14feE680690900BA0ccCfC76AD70Fd1b95D10e16",
+                    userWalletAddress: account.address,
+                    slippage: String(0.1),
+                }).toString()
         );
         const data = await response.json();
 
@@ -263,13 +263,13 @@ function TokenSwapButton(props: TokenSwapButtonProps) {
         const API_URL = "https://www.okx.com/api/v5/dex/aggregator";
         const response = await fetch(
             API_URL +
-            "/get-allowance?" +
-            new URLSearchParams({
-                chainId: "1",
-                tokenContractAddress:
-                    props.selectedToken.tokenContractAddress,
-                userWalletAddress: account.address as string,
-            }).toString()
+                "/get-allowance?" +
+                new URLSearchParams({
+                    chainId: "1",
+                    tokenContractAddress:
+                        props.selectedToken.tokenContractAddress,
+                    userWalletAddress: account.address as string,
+                }).toString()
         );
         const data = await response.json();
 
@@ -294,16 +294,16 @@ function TokenSwapButton(props: TokenSwapButtonProps) {
         const API_URL = "https://www.okx.com/api/v5/dex/aggregator";
         const response = await fetch(
             API_URL +
-            "/approve-transaction?" +
-            new URLSearchParams({
-                chainId: "1",
-                tokenContractAddress:
-                    props.selectedToken.tokenContractAddress,
-                approveAmount: parseUnits(
-                    props.amount,
-                    props.selectedToken.decimals
-                ).toString(),
-            }).toString()
+                "/approve-transaction?" +
+                new URLSearchParams({
+                    chainId: "1",
+                    tokenContractAddress:
+                        props.selectedToken.tokenContractAddress,
+                    approveAmount: parseUnits(
+                        props.amount,
+                        props.selectedToken.decimals
+                    ).toString(),
+                }).toString()
         );
         const data = await response.json();
 
@@ -370,13 +370,13 @@ function TokenSelect(props: TokenSelectProps) {
         query === ""
             ? props.availableTokens
             : props.availableTokens.filter((token) => {
-                return (
-                    token.tokenSymbol
-                        .toLowerCase()
-                        .includes(lowercaseQuery) ||
-                    token.tokenName.toLowerCase().includes(lowercaseQuery)
-                );
-            });
+                  return (
+                      token.tokenSymbol
+                          .toLowerCase()
+                          .includes(lowercaseQuery) ||
+                      token.tokenName.toLowerCase().includes(lowercaseQuery)
+                  );
+              });
 
     return (
         <Combobox value={props.selectedToken} onChange={props.setSelectedToken}>

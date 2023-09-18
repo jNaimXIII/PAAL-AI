@@ -13,7 +13,7 @@ import Whitelist from "../components/whitelist/Whitelist";
 import Footer from "../components/site/Footer";
 import MobileNavigation from "../components/site/MobileNavigation";
 import Tools from "../components/tools/Tools.tsx";
-import Swap from "../components/swap/Swap.tsx";
+// import Swap from "../components/swap/Swap.tsx";
 import Partners from "../components/partners/Partners.tsx";
 
 const Home: FC = () => {
@@ -46,7 +46,7 @@ const Home: FC = () => {
             {/* <Empowered /> */}
 
             <Divider />
-            <Swap />
+            {/* <Swap /> */}
             <Divider />
 
             <Services />

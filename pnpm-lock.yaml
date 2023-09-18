@@ -25,6 +25,9 @@ dependencies:
   '@types/p5':
     specifier: ^1.6.2
     version: 1.6.2
+  animated-number-react:
+    specifier: ^0.1.2
+    version: 0.1.2(react-dom@18.2.0)(react@18.2.0)
   lottie-react:
     specifier: ^2.4.0
     version: 2.4.0(react-dom@18.2.0)(react@18.2.0)
@@ -1875,6 +1878,17 @@ packages:
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
     dev: true
+
+  /animated-number-react@0.1.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-NsocKXtCKk0cBFITS8lGxRo02QGr4LQLh61S1KUkeEpn30H3fj0Tqz/XSyJeZ6JLJMWOP/8MV/us2Xj9I8DnVw==}
+    peerDependencies:
+      react: '>=0.14'
+      react-dom: '>=0.14'
+    dependencies:
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
 
   /ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
