@@ -8,6 +8,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import DexToolsIcon from "../../assets/icons/dextools.svg";
 import GeckoTerminalIcon from "../../assets/icons/geckoterminal.svg";
+import BitMartIcon from "../../assets/icons/bitmart.png";
+import GateIcon from "../../assets/icons/gate.png";
 
 type SocialsProps = {
     large?: boolean;
@@ -88,7 +90,7 @@ const Socials: FC<SocialsProps> = ({ large = false, small = false }) => {
                 }
                 target="_blank"
             >
-                <img src={DexToolsIcon} />
+                <img src={DexToolsIcon} alt="" />
             </a>
 
             <a
@@ -101,6 +103,29 @@ const Socials: FC<SocialsProps> = ({ large = false, small = false }) => {
                 <img
                     src={GeckoTerminalIcon}
                     style={{ filter: "grayscale(100%)" }}
+                    alt=""
+                />
+            </a>
+            <a
+                className="social-link"
+                href={"https://www.bitmart.com/trade/en-US?symbol=PAAL_USDT"}
+                target="_blank"
+            >
+                <img
+                    src={BitMartIcon}
+                    style={{ filter: "grayscale(100%)" }}
+                    alt=""
+                />
+            </a>
+            <a
+                className="social-link"
+                href={"https://www.gate.io/trade/PAAL_USDT"}
+                target="_blank"
+            >
+                <img
+                    src={GateIcon}
+                    style={{ filter: "grayscale(100%)" }}
+                    alt=""
                 />
             </a>
         </div>

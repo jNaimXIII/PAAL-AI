@@ -31,7 +31,10 @@ const Hero: FC = () => {
                             label="Get my bot now"
                             link="https://app.paal.ai/"
                         />
-                        <Button label="PAAL AI App waitlist" />
+                        <Button
+                            link="https://forms.gle/uSvA2eFk9M5nk4ZP9"
+                            label="PAAL AI App waitlist"
+                        />
                     </div>
 
                     <div className="hero-socials">

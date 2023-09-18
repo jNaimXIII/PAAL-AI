@@ -91,11 +91,19 @@ const Services: FC = () => {
                             </div>
                         </div>
                     </div>
-                    <Lottie
-                        animationData={ServicesRobotLottieAnimation}
-                        loop
-                        style={{ maxWidth: "100%" }}
-                    />
+                    <div
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            marginTop: "-5px",
+                        }}
+                    >
+                        <Lottie
+                            animationData={ServicesRobotLottieAnimation}
+                            loop
+                            style={{ maxWidth: "70%" }}
+                        />
+                    </div>
 
                     {/* <div className="service-titles">
                             <span className="title">Free</span>

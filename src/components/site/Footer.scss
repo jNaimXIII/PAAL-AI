@@ -19,6 +19,7 @@
     .actions {
         display: flex;
         flex-direction: column;
+
         gap: 0.4rem;
 
         @media (max-width: 480px) {
@@ -28,6 +29,24 @@
 
             .footer-whitepaper {
                 display: none;
+            }
+        }
+    }
+    .footer-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        a {
+            color: #ffffff;
+            margin-top: 5px;
+            font-family: "Integral CF";
+            font-style: normal;
+            font-weight: 400;
+
+            @media (max-width: 480px) {
+                font-size: 8px;
+                text-align: center;
             }
         }
     }

@@ -1,13 +1,16 @@
 import { FC } from "react";
 import "./Whitelist.scss";
+import Button from "../site/Button";
 
 const Whitelist: FC = () => {
     return (
         <section className="whitelist-section" id="whitelist">
             <div className="content site-content-container">
-                <h3>Contact Us</h3>
-
-                <a href="mailto:admin@paalai.io">admin@paalai.io</a>
+                <h4>Sign up for Paal AI Mobile app waitlist</h4>
+                <Button
+                    link="https://forms.gle/uSvA2eFk9M5nk4ZP9"
+                    label="PAAL AI App waitlist"
+                />
             </div>
         </section>
     );

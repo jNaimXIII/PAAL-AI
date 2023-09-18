@@ -27,18 +27,18 @@
             gap: 0.4rem;
         }
 
-        h3 {
+        h4 {
             color: white;
 
             font-family: "Integral CF";
             font-style: normal;
             font-weight: 600;
-            font-size: 32px;
+            font-size: 28px;
             line-height: 151%;
 
             text-transform: uppercase;
 
-            max-width: 25ch;
+            max-width: auto;
 
             @media (max-width: 768px) {
                 font-size: 24px;
