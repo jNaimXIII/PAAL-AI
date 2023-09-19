@@ -6,10 +6,13 @@ const Whitelist: FC = () => {
     return (
         <section className="whitelist-section" id="whitelist">
             <div className="content site-content-container">
-                <h4>Sign up for Paal AI Mobile app waitlist</h4>
+                <h3>
+                    <span>Sign up for </span>
+                    <span>&nbsp;Paal AI Mobile app waitlist</span>{" "}
+                </h3>
                 <Button
                     link="https://forms.gle/uSvA2eFk9M5nk4ZP9"
-                    label="PAAL AI App waitlist"
+                    label="PAAL AI App Join Waitlist"
                 />
             </div>
         </section>

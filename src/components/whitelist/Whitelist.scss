@@ -9,7 +9,8 @@
     // border: 0.5px solid #ffffffaa;
 
     background-size: 200%;
-
+    padding-top: 50px;
+    padding-bottom: 50px;
     .content {
         display: flex;
         align-items: center;
@@ -24,10 +25,11 @@
 
         @media (max-width: 520px) {
             flex-direction: column;
-            gap: 0.4rem;
+            gap: 2.5rem;
         }
 
-        h4 {
+        h3 {
+            display: flex;
             color: white;
 
             font-family: "Integral CF";
@@ -45,9 +47,10 @@
             }
 
             @media (max-width: 480px) {
-                font-size: 18px;
+                font-size: 16px;
                 text-align: center;
                 margin: 0;
+                flex-direction: column;
             }
         }
 
