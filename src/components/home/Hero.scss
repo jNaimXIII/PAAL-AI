@@ -21,7 +21,7 @@
             url("../../assets/hero/hero-background.png") no-repeat center;
         background-size: cover;
 
-        background-position-x: 60%;
+        background-position-x: 78%;
     }
 }
 
@@ -40,6 +40,7 @@
 .hero-bottom {
     @media (max-width: 480px) {
         display: flex;
+        flex-direction: column;
         gap: 1rem;
         flex-wrap: wrap-reverse;
         justify-content: space-between;
@@ -53,7 +54,7 @@
     font-family: "Monument Extended";
     font-style: normal;
     font-weight: 800;
-    font-size: 140.144px;
+    font-size: 120.144px;
     line-height: 78.5%;
 
     margin: 0;
@@ -89,7 +90,7 @@
     font-family: "Monument Extended";
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 43px;
     text-transform: capitalize;
 
