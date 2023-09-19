@@ -12,7 +12,7 @@ const Whitelist: FC = () => {
                 </h3>
                 <Button
                     link="https://forms.gle/uSvA2eFk9M5nk4ZP9"
-                    label="PAAL AI App Join Waitlist"
+                    label=" Join Waitlist"
                 />
             </div>
         </section>

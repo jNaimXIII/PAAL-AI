@@ -17,7 +17,7 @@ const Stats: FC = () => {
         {
             number: 25000,
             sign: "+",
-            label: "Custom dataset",
+            label: "Prompts",
         },
     ];
 
