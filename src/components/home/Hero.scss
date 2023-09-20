@@ -7,7 +7,7 @@
             rgba(0, 0, 0, 0) 63.96%
         ),
         url("../../assets/hero/hero-background.png") no-repeat center;
-    background-size: cover;
+    background-size: contain;
 
     @media (max-width: 480px) {
         background: linear-gradient(
@@ -18,23 +18,31 @@
                 #000000 99.99%,
                 #000000 100%
             ),
-            url("../../assets/hero/hero-background.png") no-repeat center;
+            url("../../assets/hero/hero-background-mobile.png") no-repeat center;
         background-size: cover;
 
-        background-position-x: 78%;
+        // background-position-x: 78%;
     }
 }
 
 .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     @media (max-width: 480px) {
         min-height: calc(100vh - 12rem);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
+        // gap: 20px;
     }
 }
 
 .hero-top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .hero-bottom {
