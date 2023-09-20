@@ -7,7 +7,8 @@
             rgba(0, 0, 0, 0) 63.96%
         ),
         url("../../assets/hero/hero-background.png") no-repeat center;
-    background-size: contain;
+    background-size: cover;
+    background-position-x: 70%;
 
     @media (max-width: 480px) {
         background: linear-gradient(
@@ -29,6 +30,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
+    margin-top: -100px;
     @media (max-width: 480px) {
         min-height: calc(100vh - 12rem);
         display: flex;
@@ -36,6 +38,7 @@
         justify-content: space-between;
         align-items: center;
         // gap: 20px;
+        margin-top: 0px;
     }
 }
 
@@ -169,7 +172,7 @@
 }
 
 .wallet-address {
-    color: #ac2bf9;
+    color: #ffffff;
 
     display: block;
     font-family: "Monument Extended";
@@ -181,14 +184,14 @@
     text-decoration: none;
 
     // margin-top: 12rem;
-    margin-top: 8rem;
+    margin-top: 3rem;
 
     @media (max-width: 1367px) {
-        margin-top: 4rem;
+        // margin-top: 4rem;
     }
 
     @media (max-width: 768px) {
-        margin-top: 7rem;
+        // margin-top: 7rem;
 
         font-size: 2.4vw;
         // font-size: 16px;
