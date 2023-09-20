@@ -126,6 +126,13 @@
                     align-items: center;
                 }
             }
+            .li-title {
+                color: #a12aeb;
+                font-size: 1.5rem;
+            }
+            @media (max-width: 480px) {
+                font-size: medium;
+            }
         }
     }
 }

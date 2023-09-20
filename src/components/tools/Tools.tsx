@@ -4,6 +4,10 @@ import Button from "../site/Button";
 
 export default function Tools() {
     const [selectedIndex, setSelectedIndex] = useState(0);
+    console.log(
+        "🚀 ~ file: Tools.tsx:7 ~ Tools ~ selectedIndex:",
+        selectedIndex
+    );
 
     const content = [
         {
@@ -13,29 +17,71 @@ export default function Tools() {
                 link: "https://app.paal.ai/",
             },
             messages: [
-                "Cryptocurrency-focused AI: Handles inquiries, summarizes conversations, and assesses chat sentiment.",
-                "Multi-platform Integration: Compatible with platforms like Telegram, Discord, etc.",
-                "Customizable: Personalize bot's personality, response style, and knowledge base about various coins and projects.",
-                "Content Upload: Supports Word, PDF, website, YouTube links for bot learning.",
-                "Multiple Bots: Multiple bots can be utilized across various channels.",
-                "Real-time Data Fetching: Collects real-time project data from multiple sources.",
-                "Secure: Uses FIPS 140-2 validated encryption by Google Cloud for data security and privacy.",
-                "Revenue sharing with $PAAL stakers.",
+                {
+                    title: "Cryptocurrency-focused AI",
+                    text: "Handles inquiries, summarizes conversations, and assesses chat sentiment.",
+                },
+                {
+                    title: "Multi-platform Integration",
+                    text: "Compatible with platforms like Telegram, Discord, etc.",
+                },
+                {
+                    title: "Customizable",
+                    text: "Personalize bot's personality, response style, and knowledge base about various coins and projects.",
+                },
+                {
+                    title: "Content Upload",
+                    text: "Supports Word, PDF, website, YouTube links for bot learning.",
+                },
+                {
+                    title: "Multiple Bots",
+                    text: "Multiple bots can be utilized across various channels.",
+                },
+                {
+                    title: "Real-time Data Fetching",
+                    text: "Collects real-time project data from multiple sources.",
+                },
+                {
+                    title: "Secure",
+                    text: "Uses FIPS 140-2 validated encryption by Google Cloud for data security and privacy.",
+                },
+                {
+                    title: "Revenue sharing with $PAAL stakers",
+                    text: "This message does not contain additional text.",
+                },
             ],
         },
         {
             title: "AutoPaal",
             action: {
-                label: "Coming Soon",
-                link: "/",
+                label: "Try Now",
+                link: "https://t.me/mypaalbot",
             },
             messages: [
-                "Autonomous AI: Provides crypto-focused research, insights, and analysis.",
-                "Quality Data Sources: Utilizes trusted and validated data sources.",
-                "Broad User Base: Serves users from beginners to experts in crypto.",
-                "Cited Responses: Provides comprehensive answers with source citations.",
-                "Preset Commands: Uses community-suggested commands for powerful results.",
-                "Configurable Watch Agents: Monitors market trends and notifies users of specific conditions.",
+                {
+                    title: "Autonomous AI",
+                    text: "Provides crypto-focused research, insights, and analysis.",
+                },
+                {
+                    title: "Quality Data Sources",
+                    text: "Utilizes trusted and validated data sources.",
+                },
+                {
+                    title: "Broad User Base",
+                    text: "Serves users from beginners to experts in crypto.",
+                },
+                {
+                    title: "Cited Responses",
+                    text: "Provides comprehensive answers with source citations.",
+                },
+                {
+                    title: "Preset Commands",
+                    text: "Uses community-suggested commands for powerful results.",
+                },
+                {
+                    title: "Configurable Watch Agents",
+                    text: "Monitors market trends and notifies users of specific conditions.",
+                },
             ],
         },
         {
@@ -45,12 +91,30 @@ export default function Tools() {
                 link: "/",
             },
             messages: [
-                "Comprehensive Features: Includes all the features of MyPaal and AutoPaal, providing a comprehensive tool for users.",
-                "Lightning-Fast Trading: Offers lightning-fast trading, limit orders, and private transactions, enhancing the trading experience for users.",
-                "Token Scanner: Features a token scanner, allowing users to easily find and track tokens.",
-                "Custom Parameter Settings: With AutoPaal-X, users can set custom parameters for the auto sniper, providing greater control and customization.",
-                "Data Quality and Accuracy: Ensures data quality and accuracy through a rigorous testing and validation process, providing reliable and accurate information for users.",
-                "Revenue Sharing: Provides revenue sharing with $PAAL stakers, offering an additional incentive for staking.",
+                {
+                    title: "Comprehensive Features",
+                    text: "Includes all the features of MyPaal and AutoPaal, providing a comprehensive tool for users.",
+                },
+                {
+                    title: "Lightning-Fast Trading",
+                    text: "Offers lightning-fast trading, limit orders, and private transactions, enhancing the trading experience for users.",
+                },
+                {
+                    title: "Token Scanner",
+                    text: "Features a token scanner, allowing users to easily find and track tokens.",
+                },
+                {
+                    title: "Custom Parameter Settings",
+                    text: "With AutoPaal-X, users can set custom parameters for the auto sniper, providing greater control and customization.",
+                },
+                {
+                    title: "Data Quality and Accuracy",
+                    text: "Ensures data quality and accuracy through a rigorous testing and validation process, providing reliable and accurate information for users.",
+                },
+                {
+                    title: "Revenue Sharing",
+                    text: "Provides revenue sharing with $PAAL stakers, offering an additional incentive for staking.",
+                },
             ],
         },
     ];
@@ -77,11 +141,17 @@ export default function Tools() {
 
                 <div className="content">
                     <ol className="list">
-                        {content[selectedIndex].messages.map((message) => (
-                            <li key={message}>{message}</li>
+                        {content[selectedIndex]?.messages?.map((message, i) => (
+                            <li key={i}>
+                                <span className="li-title">
+                                    {message.title}
+                                </span>
+                                &#32; &#58; &#32;
+                                <span>{message.text}</span>
+                            </li>
                         ))}
-                    </ol>
-
+                    </ol>{" "}
+                    *
                     <div className="action">
                         <Button
                             label={content[selectedIndex].action.label}
