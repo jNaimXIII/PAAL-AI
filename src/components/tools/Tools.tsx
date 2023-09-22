@@ -47,7 +47,7 @@ export default function Tools() {
                 },
                 {
                     title: "Revenue sharing with $PAAL stakers",
-                    text: "This message does not contain additional text.",
+                    text: "Stakers are eligible to receive ETH payments and earn $PAAL tokens ",
                 },
             ],
         },
