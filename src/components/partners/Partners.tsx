@@ -4,8 +4,9 @@ import "./Partners.scss";
 import GCloudImage from "../../assets/partners/gcloud.png";
 import OKXImage from "../../assets/partners/okx.png";
 import AminoIcon from "../../assets/icons/Amino.png";
-// import CoinGeckoIcon from "../../assets/icons/coingecko.webp";
+import CoinGeckoIcon from "../../assets/icons/coingecko.webp";
 import GeckoTerminalIcon from "../../assets/icons/GeckoTerminal.webp";
+import NvidiaIcon from "../../assets/icons/nvidia-logo.png";
 
 export default function Partners() {
     return (
@@ -16,10 +17,11 @@ export default function Partners() {
                     <img src={AminoIcon} alt="" />
                     <img src={GCloudImage} alt="" />
                     <img src={OKXImage} alt="" />
+                    <img src={CoinGeckoIcon} alt="" />
                 </div>
                 <div className="images2">
                     {/* <img src={CoinGeckoIcon} alt="" /> */}
-
+                    <img style={{ scale: "1.7" }} src={NvidiaIcon} alt="" />
                     <img src={GeckoTerminalIcon} alt="" />
                 </div>
             </div>
