@@ -2,14 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 1rem 0;
 
     .company-logo {
         height: 75px;
-
+        margin-top: -30px;
         @media (max-width: 625px) {
             height: 2.5rem;
+            margin-top: 0;
         }
     }
 

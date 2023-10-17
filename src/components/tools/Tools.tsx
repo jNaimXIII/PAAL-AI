@@ -45,10 +45,6 @@ export default function Tools() {
                     title: "Secure",
                     text: "Uses FIPS 140-2 validated encryption by Google Cloud for data security and privacy.",
                 },
-                {
-                    title: "Revenue sharing with $PAAL stakers",
-                    text: "Stakers are eligible to receive ETH payments and earn $PAAL tokens ",
-                },
             ],
         },
         {
@@ -114,6 +110,10 @@ export default function Tools() {
                 {
                     title: "Revenue Sharing",
                     text: "Provides revenue sharing with $PAAL stakers, offering an additional incentive for staking.",
+                },
+                {
+                    title: "Revenue sharing with $PAAL stakers",
+                    text: "Stakers are eligible to receive ETH payments and earn $PAAL tokens ",
                 },
             ],
         },

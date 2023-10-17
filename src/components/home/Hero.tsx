@@ -45,6 +45,7 @@ const Hero: FC = () => {
                         href="https://etherscan.io/token/0x14feE680690900BA0ccCfC76AD70Fd1b95D10e16"
                         target="_blank"
                         className="wallet-address"
+                        rel="noopener noreferrer"
                     >
                         0x14feE680690900BA0ccCfC76AD70Fd1b95D10e16
                     </a>

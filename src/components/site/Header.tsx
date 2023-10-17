@@ -2,6 +2,7 @@ import { FC } from "react";
 import "./Header.scss";
 
 import PAALAILogo from "../../assets/site/paal-ai-logo.png";
+import MobileNavigation from "./MobileNavigation";
 // import Button from "./Button";
 
 const Header: FC = () => {
@@ -15,6 +16,7 @@ const Header: FC = () => {
                     link="https://paalai.io/whitepaper.pdf"
                 />
             </div> */}
+            <MobileNavigation />
         </header>
     );
 };
