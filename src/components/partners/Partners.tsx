@@ -14,14 +14,14 @@ export default function Partners() {
             <h3>Partners</h3>
             <div className="partners">
                 <div className="images">
-                    <img src={AminoIcon} alt="" />
+                    <img className="aminiIcon" src={AminoIcon} alt="" />
                     <img src={GCloudImage} alt="" />
                     <img src={OKXImage} alt="" />
-                    <img src={CoinGeckoIcon} alt="" />
+                    <img className="coincecko" src={CoinGeckoIcon} alt="" />
                 </div>
                 <div className="images2">
                     {/* <img src={CoinGeckoIcon} alt="" /> */}
-                    <img style={{ scale: "1.7" }} src={NvidiaIcon} alt="" />
+                    <img src={NvidiaIcon} alt="" />
                     <img src={GeckoTerminalIcon} alt="" />
                 </div>
             </div>
