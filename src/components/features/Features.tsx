@@ -22,7 +22,7 @@ const Features: FC = () => {
     const featuresGroupTwo = [
         {
             label: "Multimodal AI",
-            link: "https://docs.paalai.io/features/product/summarize",
+            link: "https://docs.paalai.io/features/products/mypaalbot/autopaal",
         },
         {
             label: "AI as a service",
