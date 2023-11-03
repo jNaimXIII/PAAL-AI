@@ -3,6 +3,7 @@ import "./Services.scss";
 import Lottie from "lottie-react";
 
 import ServicesRobotLottieAnimation from "../../assets/services/services-robot-lottie.json";
+import Button from "../site/Button";
 
 const Services: FC = () => {
     const freeServices = [
@@ -91,6 +92,19 @@ const Services: FC = () => {
                             </div>
                         </div>
                     </div>
+                    <div
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                        }}
+                    >
+                        <Button
+                            label="Get Custom AI Bot"
+                            className=""
+                            link="https://docs.google.com/forms/d/1SqFcOrhzRt7TbXc8ullIt4aV0cFUH7FhdMythqwdHNE/edit"
+                        />
+                    </div>
+
                     <div
                         style={{
                             display: "flex",

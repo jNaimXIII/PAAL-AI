@@ -14,7 +14,7 @@ const Explore: FC = () => {
         "1% of all $PAAL trading volume.",
         "AI tools subscription.",
         "Service revenue sharing.",
-        "25% referral rewards.",
+        "15% referral rewards.",
         "Partner projects Airdrops.",
     ];
 

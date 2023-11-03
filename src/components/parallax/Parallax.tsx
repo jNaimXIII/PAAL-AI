@@ -41,7 +41,7 @@ const Parallax: FC = () => {
 
     const parallaxTexts = [
         // "/prompt Hello MyPaal, tell me about the project?",
-        "/paal Hello Paal, Tell Me About The Project?",
+
         "/paal Hola Paal, ¿cuéntame sobre el proyecto?",
         "/paal Hello Paal, 告诉我有关该项目的信息",
         "/paal Hallo Paal, erzähl mir etwas über das Projekt?",
