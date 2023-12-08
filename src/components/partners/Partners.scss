@@ -45,12 +45,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10rem;
+        gap: 8rem;
         flex-wrap: wrap;
 
         @media (max-width: 768px) {
             flex-direction: column;
-            gap: 5rem;
+            gap: 3rem;
             justify-content: center;
         }
 
