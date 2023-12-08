@@ -23,6 +23,20 @@ export default function Partners() {
                     {/* <img src={CoinGeckoIcon} alt="" /> */}
                     {/* <img src={NvidiaIcon} alt="" /> */}
                     <img src={GeckoTerminalIcon} alt="" />
+                    <a href="https://chain.link/badge&quot" target="_blank">
+                        {" "}
+                        <img
+                            src="https://uploads-ssl.webflow.com/5f6b7190899f41fb70882d08/632c50d9db40967f015be6d1_secured-with-chainlink-badge-market-data.svg"
+                            alt="market data secured with chainlink"
+                        />
+                    </a>
+                    <a href="https://chain.link/badge&quot" target="_blank">
+                        {" "}
+                        <img
+                            src="https://uploads-ssl.webflow.com/5f6b7190899f41fb70882d08/632c50d91344fb274942c698_secured-with-chainlink-badge-randomness.svg"
+                            alt="market data secured with chainlink"
+                        />
+                    </a>
                 </div>
             </div>
         </section>
