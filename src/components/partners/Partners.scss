@@ -45,12 +45,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 8rem;
+        gap: 10rem;
         flex-wrap: wrap;
 
         @media (max-width: 768px) {
             flex-direction: column;
-            gap: 3rem;
+            gap: 4rem;
             justify-content: center;
         }
 
@@ -62,7 +62,27 @@
             }
         }
     }
+    .images3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7rem;
+        flex-wrap: wrap;
 
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        img {
+            height: 60px;
+
+            @media (max-width: 512px) {
+                height: 50px;
+            }
+        }
+    }
     .partners {
         display: flex;
         flex-direction: column;
